@@ -9,3 +9,16 @@ What is Explicitly Programming?
 In which you write code for every scenario(To handle that scenario)
 But in ML we don't do that, We got some data and algorithm we apply that algorithm to the data which explores the data and identify patterns. And once it do this, we give it new data(Test Data) and on the basis of what the data has learn it gives us some output.
 
+->In what scenarios ML can be helpful to us??
+We cannot perform few things using programming, we cannot write cases for everything. In this scenarios ML is helpful
+(i)Email spam classifier(Email spam or not)
+This can be done using software developer techniques(Traditional Programming)(Writing cases) but it will be too long because we have to write cases like if a mail contains "discount"(more than 3 times) than it will be spam.
+
+For example:-
+You have created cases for finding an email whether it is spam or not. Suppose 1 test case is this:- If word "huge" appears more than 3 times than it is a spam email.
+But now what the advertising companies do??
+They can replace the "huge" -> "Big", now you need to update your logic again so that your code can runs efficiently.
+But what ML does is? It learns from data, if data changes then it will automatically get reflected in the logic
+
+(ii)Dog is present in the picture or not
+If you will use Traditional programming you have to write 'n' number of test cases such as on the basis of color, breeds, height and other characteristics.
