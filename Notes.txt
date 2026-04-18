@@ -63,3 +63,20 @@ Machine Learning has existed since the 1950s, but it saw rapid growth after 2010
 - Limitation:
   - Needs large data + high computation
 
+Examples:
+
+1. Spam Detection
+- AI: Rule "FREE" → spam (fails)
+- ML: Learns from emails (better)
+- DL: Understands context (best)
+
+2. Self-Driving Cars
+- AI: Rule-based detection (fails)
+- ML: Uses features (limited)
+- DL: Detects objects automatically (best)
+
+
+Final Line:
+AI = rules
+ML = learns from data
+DL = learns data + features automatically
