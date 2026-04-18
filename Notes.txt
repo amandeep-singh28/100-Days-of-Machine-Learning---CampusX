@@ -30,3 +30,6 @@ Data analysis -> We find hidden information in the data by plotting graphs.
 But sometimes there is more hidden information which cannot be find by just plotting the graphs.
 
 So what is Data Mining -> We train a model on the data just like an email spam classifier and if you are able to extract important data from that information that is known as Data Mining.
+
+->History??
+Machine Learning has existed since the 1950s, but it saw rapid growth after 2010 due to the availability of large datasets, powerful computing (especially GPUs), and advances in algorithms like deep learning
