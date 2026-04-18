@@ -1,0 +1,11 @@
+****Day 1 - What is Machine Learning?****
+
+->Formal Definition
+It is a field of computer science that uses statistical techniques to give computer systems the ability to "learn" with data, without being explicitly programmed.
+
+ML is all about learning about data.
+
+What is Explicitly Programming?
+In which you write code for every scenario(To handle that scenario)
+But in ML we don't do that, We got some data and algorithm we apply that algorithm to the data which explores the data and identify patterns. And once it do this, we give it new data(Test Data) and on the basis of what the data has learn it gives us some output.
+
