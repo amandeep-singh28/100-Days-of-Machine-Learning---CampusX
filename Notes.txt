@@ -33,3 +33,33 @@ So what is Data Mining -> We train a model on the data just like an email spam c
 
 ->History??
 Machine Learning has existed since the 1950s, but it saw rapid growth after 2010 due to the availability of large datasets, powerful computing (especially GPUs), and advances in algorithms like deep learning
+
+
+->AI vs ML vs DL Notes
+
+1. AI (Artificial Intelligence)
+- Uses rule-based systems (IF-ELSE)
+- Example: IF "FREE" → spam
+- Limitation:
+  - Rigid rules
+  - Not scalable for complex problems
+
+2. ML (Machine Learning)
+- Learns patterns from data
+- Example: Train on spam/not spam emails
+- Key Point:
+  - Requires feature engineering (keywords, edges)
+- Limitation:
+  - Hard to design features
+  - Struggles with complex data
+
+3. DL (Deep Learning)
+- Uses neural networks
+- Learns patterns + features automatically
+- Example: Understands context in emails/images
+- Advantage:
+  - No manual feature engineering
+  - Works well on images, speech, text
+- Limitation:
+  - Needs large data + high computation
+
