@@ -22,3 +22,11 @@ But what ML does is? It learns from data, if data changes then it will automatic
 
 (ii)Dog is present in the picture or not
 If you will use Traditional programming you have to write 'n' number of test cases such as on the basis of color, breeds, height and other characteristics.
+
+
+->What is Data Mining??
+Data analysis -> We find hidden information in the data by plotting graphs.
+
+But sometimes there is more hidden information which cannot be find by just plotting the graphs.
+
+So what is Data Mining -> We train a model on the data just like an email spam classifier and if you are able to extract important data from that information that is known as Data Mining.
