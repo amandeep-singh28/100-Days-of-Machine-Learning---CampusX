@@ -136,3 +136,8 @@ What if we label only 1-2 points and rest automatically gets labelled. This is t
 
 For example:-
 In Google Photos, the system first uses unsupervised learning techniques to cluster similar faces together without knowing their identities. After that, when a user labels a few images (e.g., assigning a name to a face), the system uses this small amount of labeled data along with the large unlabeled dataset to recognize the same person in other images. This is an example of semi-supervised learning, where both labeled and unlabeled data are used together.
+
+->Reinforcement Learning
+Reinforcement Learning is a type of machine learning where an agent learns by interacting with an environment and improving its actions based on feedback in the form of rewards or penalties. The goal is to maximize the total reward over time.
+
+For example, a game-playing AI learns which moves are good or bad by receiving rewards for winning and penalties for losing.
