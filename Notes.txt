@@ -124,3 +124,15 @@ Like finding the outliers(That are different from the other points)
 It involves discovering new rules by analyzing the data.
 For example:-
 In a shopping mart, people often buy bread with butter. So we can put that two things together. So that the sales can be improved and people will be at ease finding these two items.
+
+
+->Semi-Supervised Learning
+Partially supervised and partially Unsupervised.
+Output columns is very expensive -> At the end who will tell whether in the image it is a dog or cat, Human being will tell only. Labelling which is done, it is done by the humans only and it takes a lot of effort.
+We can get the INPUT column from anywhere but what about the OUPUT column(The data which is inside the photo, To do this we have do it manually and it will require more human efforts, time and money)
+
+Solution:-
+What if we label only 1-2 points and rest automatically gets labelled. This is the core idea behind semi-supervised learning.
+
+For example:-
+In Google Photos, the system first uses unsupervised learning techniques to cluster similar faces together without knowing their identities. After that, when a user labels a few images (e.g., assigning a name to a face), the system uses this small amount of labeled data along with the large unlabeled dataset to recognize the same person in other images. This is an example of semi-supervised learning, where both labeled and unlabeled data are used together.
