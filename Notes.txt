@@ -109,3 +109,18 @@ For example:- IQ|CGPA|PACKAGE
 
 Classification -> Output Column is Categorical
 For example:- IQ|CGPA|Y/N(Placement)
+
+
+->Unsupervised Learning
+When we don't have output column, we use this learning.
+It creates patterns (groups) and from visiualizing that patterns we can see what group of people are following the same thing kind of.
+(i)Clustering
+Creates patterns/Clusters
+(ii)Dimensionality reduction(PCA)
+Suppose there are many columns, we will not be able to plot the patterns. In this case we tend to remove the unnecessary columns which don't hold as much information OR we can create a new column by combining multiple columns
+(iii)Anomaly Detection
+Like finding the outliers(That are different from the other points)
+(iv)Assosication Rule Mining
+It involves discovering new rules by analyzing the data.
+For example:-
+In a shopping mart, people often buy bread with butter. So we can put that two things together. So that the sales can be improved and people will be at ease finding these two items.
