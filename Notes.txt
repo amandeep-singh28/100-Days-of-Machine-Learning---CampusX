@@ -80,3 +80,32 @@ Final Line:
 AI = rules
 ML = learns from data
 DL = learns data + features automatically
+
+
+****Types of Machine Learning****
+(i)Supervised -> Regression and Classification
+(ii)Unsupervised -> Clustering, Dimensionality reduction, Anomaly detection and Assosication
+(iii)Semi Supervised
+(iv)Reinforcement
+
+
+->Supervised Learning
+Suppose we have Input and output for a data and now we need to predict for a new input what will be output for that input. This is known as Supervised Learning.
+
+For example:-
+IQ|CGPA|Y/N(Placement)
+87|7.1|Y
+90|7.5|Y
+60|5.2|N
+
+We have both Input(IQ, CGPA) and Output(Y/N(Placement)). Now the task for the algorithm will be to create a mathematical relationship between Input and Output. So that if a new data comes in it can easily get predicted.
+
+There are two types of data:-
+(i)Numerical
+(ii)Categorical
+
+Regression -> Ouput Column is Numerical
+For example:- IQ|CGPA|PACKAGE
+
+Classification -> Output Column is Categorical
+For example:- IQ|CGPA|Y/N(Placement)
