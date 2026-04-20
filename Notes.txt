@@ -157,3 +157,18 @@ We have made a model and deployed it on the server related to Email Spam classif
 
 Note:-
 -And also most of the Data Scientists/ ML engineers make a rule that the system will automatically trained the new data along with the old data after 24hrs/ 3days/ 1week
+
+(ii)Online Machine Learning
+In this we do Incremental learning using mini batches of the data where you train your model sequentially using mini batches.
+Since batches are small, we can perform the training on the server itself, it will not cost that much.
+
+->How it works??
+(i)Model is trained initially (basic training)
+(ii)New data arrives (one-by-one or in small batches)
+(iii)Model updates its weights instantly
+(iv)No full retraining needed
+
+Example:-
+YouTube recommendation system. When you see a particular video, your feeds gets automatically changed related to that content where you see more content related to that.
+
+
