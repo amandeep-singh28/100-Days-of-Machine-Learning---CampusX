@@ -183,3 +183,9 @@ YouTube recommendation system. When you see a particular video, your feeds gets 
 
 
 Data Drift -> The pattern of the data changes over time
+
+->When to use Offline/ Online Learning
+When the pattern of the data changes over time(Data Drift). At that time you must use Online learning.
+Example:-
+Stock Exchange, Ecommerce Platforms
+
