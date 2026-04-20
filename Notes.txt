@@ -205,3 +205,13 @@ When you will use ONLINE LEARNING, you need to decide learning rate. It means th
 It must not be too high because it can forgot the previous patterns.
 
 Learning rate = speed/strength of learning, not timing
+
+->Out of core learning
+It is a technique used when the dataset is too large to fit into RAM, so the model is trained by loading data in small chunks (batches).
+
+-How it works??
+(i)Load a small chunk of data from disk
+(ii)Train the model on that chunk
+(iii)Discard it from memory
+(iv)Load next chunk
+(v)Repeat until full dataset is processed
