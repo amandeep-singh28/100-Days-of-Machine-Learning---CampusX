@@ -171,4 +171,12 @@ Since batches are small, we can perform the training on the server itself, it wi
 Example:-
 YouTube recommendation system. When you see a particular video, your feeds gets automatically changed related to that content where you see more content related to that.
 
+-Advantages
+(i)Adapts quickly to data drift
+(ii)No need for full retraining
+(iii)Works well with large/streaming data
 
+-Disadvantages
+(i)Can learn wrong patterns if bad data comes
+(ii)Harder to debug
+(iii)Needs careful monitoring
