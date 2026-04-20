@@ -189,3 +189,13 @@ When the pattern of the data changes over time(Data Drift). At that time you mus
 Example:-
 Stock Exchange, Ecommerce Platforms
 
+->How to implement Online Learning
+(i)Using Scikit-learn (Mostly it is used for Offline learning but you can use it for Online learning also)
+-model = SGDRegressor()
+-model.partial_fit(X, y)
+
+(ii)River Library
+It is a python Library which is used for Online ML. Combination of creme and Scikit-multiflow
+
+(iii)Vowpal Wabbit
+Same
