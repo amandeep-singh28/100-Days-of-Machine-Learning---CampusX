@@ -141,3 +141,16 @@ In Google Photos, the system first uses unsupervised learning techniques to clus
 Reinforcement Learning is a type of machine learning where an agent learns by interacting with an environment and improving its actions based on feedback in the form of rewards or penalties. The goal is to maximize the total reward over time.
 
 For example, a game-playing AI learns which moves are good or bad by receiving rewards for winning and penalties for losing.
+
+
+****Batch Machine Learning (Offline vs Online)****
+(i)Offline learning (Batch Machine Learning)
+-It states that the entire dataset was trained on the model at once.
+-After training it is deployed on the server. Afterwards when new data comes it gives prediction for that data.
+
+Disadvantages:-
+(i)No real time updates
+(ii)Time consuming (If the data is large)
+
+For example:-
+We have made a model and deployed it on the server related to Email Spam classifier using this technique. Now the data on which the model was trained would not be remain same, it can get update, new data can comes in and it can get false results. So to solve this problem, User again trained the data (Old + New) and again deployed it on the server.
