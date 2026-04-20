@@ -154,3 +154,6 @@ Disadvantages:-
 
 For example:-
 We have made a model and deployed it on the server related to Email Spam classifier using this technique. Now the data on which the model was trained would not be remain same, it can get update, new data can comes in and it can get false results. So to solve this problem, User again trained the data (Old + New) and again deployed it on the server.
+
+Note:-
+-And also most of the Data Scientists/ ML engineers make a rule that the system will automatically trained the new data along with the old data after 24hrs/ 3days/ 1week
