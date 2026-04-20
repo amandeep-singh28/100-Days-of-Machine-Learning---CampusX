@@ -180,3 +180,6 @@ YouTube recommendation system. When you see a particular video, your feeds gets 
 (i)Can learn wrong patterns if bad data comes
 (ii)Harder to debug
 (iii)Needs careful monitoring
+
+
+Data Drift -> The pattern of the data changes over time
