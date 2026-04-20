@@ -199,3 +199,9 @@ It is a python Library which is used for Online ML. Combination of creme and Sci
 
 (iii)Vowpal Wabbit
 Same
+
+->Learning Rate(Important Point)
+When you will use ONLINE LEARNING, you need to decide learning rate. It means that how much the model updates its knowledge from new data.
+It must not be too high because it can forgot the previous patterns.
+
+Learning rate = speed/strength of learning, not timing
