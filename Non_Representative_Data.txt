@@ -1,0 +1,168 @@
+================================================================================
+NON-REPRESENTATIVE DATA - COMPLETE NOTES
+================================================================================
+
+(III) NON-REPRESENTATIVE DATA
+================================================================================
+
+DEFINITION:
+Non-representative data means your training data does not properly represent 
+the real-world population, yet you still trained the model on it.
+
+PROBLEM:
+When your model is trained on non-representative data, it may look good 
+(good fit), but in reality it will make wrong predictions because the data 
+doesn't reflect reality.
+
+
+SIMPLE EXAMPLE - Linear Regression:
+================================================================================
+- You train a Linear Regression model on non-representative data
+- Result: The model gives a good line of fit
+- Reality: The line is WRONG because the data was biased
+- Prediction: The model will fail on real-world data
+
+
+REAL-WORLD EXAMPLE - T20 World Cup Survey:
+================================================================================
+Question: "Who will win the T20 World Cup?"
+
+Two different problems can occur:
+
+
+1. SAMPLING BIAS (Wrong Way of Collecting Data)
+================================================================================
+
+WHAT IS IT?
+Your data collection method is flawed from the start.
+
+EXAMPLE:
+- You conduct survey ONLY IN INDIA ❌
+- Result: Everyone says "India will win!"
+- Reason: Indians naturally support India
+- Problem: You didn't ask people from other countries
+
+HOW TO FIX:
+Conduct survey GLOBALLY ✅
+- Ask people from all countries
+- Get a balanced perspective
+- Now data is representative!
+
+KEY POINT:
+This is SYSTEMATIC BIAS - your method is wrong, not your luck.
+
+
+2. SAMPLING NOISE (Bad Luck / Random Variation)
+================================================================================
+
+WHAT IS IT?
+You collect data the RIGHT WAY, but bad luck creates random fluctuations.
+
+EXAMPLE:
+- You conduct survey in different countries randomly ✅ (correct method)
+- True answer: 50% think India will win
+- But by bad luck, you randomly picked more India supporters
+- Your survey shows: 60% think India will win (wrong estimate!)
+- Reason: Pure randomness, not because of bad collection method
+
+HOW TO FIX:
+Ask MORE PEOPLE ✅
+- Larger sample size = less effect of random luck
+- More data = more stable results
+
+KEY POINT:
+This is RANDOM ERROR - not your method's fault, just unlucky sampling.
+
+
+QUICK COMPARISON TABLE:
+================================================================================
+
+                    SAMPLING BIAS           SAMPLING NOISE
+-------------       ---------------         ---------------
+What is it?         Wrong collection        Random bad luck
+                    method
+
+Example             Survey only in          Random supporters
+                    India                   picked
+
+Cause               Biased approach         Randomness/chance
+
+Fix                 Change how you          Collect more data
+                    collect data            (bigger sample)
+
+Systematic or       SYSTEMATIC              RANDOM
+Random?             (always same bias)      (varies each time)
+
+Solution Priority   FIX FIRST!              Fix after fixing bias
+
+
+VISUAL COMPARISON:
+================================================================================
+
+SAMPLING BIAS:
+  True Population: 50% say India wins
+  Your Survey:     70% say India wins (always too high)
+  Your Survey:     72% say India wins (always too high)
+  Your Survey:     71% say India wins (always too high)
+  → CONSISTENT ERROR (biased toward India)
+
+SAMPLING NOISE:
+  True Population: 50% say India wins
+  Your Survey:     48% say India wins (varies by luck)
+  Your Survey:     52% say India wins (varies by luck)
+  Your Survey:     50% say India wins (varies by luck)
+  → RANDOM VARIATION (no consistent bias)
+
+
+REAL MODEL EXAMPLE:
+================================================================================
+
+SCENARIO 1 - Biased Data (Sampling Bias):
+❌ Train model ONLY on India data
+❌ Model learns: "India always wins!"
+❌ Real-world test: Model fails completely
+
+FIX:
+✅ Train on data from ALL countries
+✅ Model learns balanced predictions
+✅ Real-world test: Model works well!
+
+
+SCENARIO 2 - Lucky/Unlucky Sample (Sampling Noise):
+⚠️ Train on global data (correct method)
+⚠️ But randomly picked more India supporters
+⚠️ Model is slightly biased (but could be fixed)
+
+FIX:
+✅ Use LARGER sample from global population
+✅ Random noise cancels out with more data
+✅ Model becomes more accurate
+
+
+KEY TAKEAWAYS:
+================================================================================
+
+1. Non-representative data = Your training data doesn't match real world
+
+2. Two types of non-representative data:
+   
+   A) SAMPLING BIAS
+      - Problem: Wrong way of collecting data
+      - Example: Survey only in India
+      - Fix: Change your collection method
+   
+   B) SAMPLING NOISE
+      - Problem: Bad luck in random selection
+      - Example: Randomly picked too many India supporters
+      - Fix: Collect more data
+
+3. Priority: Fix BIAS first, then NOISE
+
+4. A model trained on non-representative data:
+   - May look good on training data
+   - Will perform poorly on real-world data
+
+
+================================================================================
+END OF NOTES
+================================================================================
