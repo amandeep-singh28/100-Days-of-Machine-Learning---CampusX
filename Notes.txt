@@ -215,3 +215,18 @@ It is a technique used when the dataset is too large to fit into RAM, so the mod
 (iii)Discard it from memory
 (iv)Load next chunk
 (v)Repeat until full dataset is processed
+
+
+****Instance Based VS Model Based Learning****
+Human learning can be done in two ways:-
+(i)Memorizing (Ratafication)
+(ii)Generalizing (Understanding from the scratch)
+
+->Instance Based Learning
+There is no training phase in this. No model training
+Suppose we have this data:-
+IQ|CGPA|Placement(Y/N)
+80   8    Y
+70   7    N
+
+Suppose a new data comes 103,7.3. We have to predict whether the student is placed or not. So in this scenario we will choose the points near to it and if the number of Yes's > number of No's than we will say YES the student is placed.
