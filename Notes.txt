@@ -230,3 +230,7 @@ IQ|CGPA|Placement(Y/N)
 70   7    N
 
 Suppose a new data comes 103,7.3. We have to predict whether the student is placed or not. So in this scenario we will choose the points near to it and if the number of Yes's > number of No's than we will say YES the student is placed.
+
+->Model Based Learning
+Model tries to learn the behaviour of the data.
+Training phase is there.
