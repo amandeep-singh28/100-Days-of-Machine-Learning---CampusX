@@ -271,3 +271,52 @@ Model B is better (KINDDD OFFF but not always true)
 ✔ Conclusion:
 → More data ≠ Better model always
 → Quality of data matters more than quantity
+
+(iii)Non Representative Data
+It means that your data was not complete and you still trained the model.
+
+It means that your data does not properly represent the real-world population 
+and you still trained the model.
+
+Example: Suppose you have trained your Linear Regression model on 
+non-representative data. It gives a line of good fit, but in reality, since 
+the data was not representative, the line plotted by the model is wrong.
+
+
+1. SAMPLING BIAS (Wrong Data Collection)
+
+Real-World Example: Suppose you are conducting a survey for who will win the 
+T20 World Cup. You have conducted the survey in India only. People in India 
+will mostly support India, which shows that our data is not representative. 
+We should conduct the survey globally. 
+
+This is known as Sampling Bias (poor representation of data due to wrong 
+data collection).
+
+Fix: Conduct survey in ALL countries (change your collection method)
+
+
+2. SAMPLING NOISE (Random Variation)
+
+Now suppose you conduct the survey in different countries randomly, but still 
+most people say India will win due to chance. 
+
+This is known as Sampling Noise (error due to randomness).
+
+Fix: Collect more data (larger sample size reduces random error)
+
+
+(iv)Poor Quality Data
+Outliers, Missing Values
+
+(v)Irrelevant features
+
+(vi)Overfitting
+
+(vii)Underfitting
+
+(viii)Software Integration
+
+(ix)Offline Learning / Deployment
+
+(x)Cost Involved
