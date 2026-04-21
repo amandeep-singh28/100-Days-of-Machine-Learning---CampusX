@@ -1,0 +1,99 @@
+****Instance Based vs Model Based Learning****
+
+Human learning can be done in two ways:
+(i) Memorizing (Rote Learning)
+(ii) Generalizing (Understanding concepts)
+
+--------------------------------------------------
+
+-> Instance-Based Learning (IBL)
+
+• It is based on memorization.
+• There is NO explicit training phase (lazy learning).
+• The model simply stores the entire dataset.
+• Computation happens at the time of prediction.
+
+• When a new data point comes:
+  - We find similar data points (using distance metrics like Euclidean distance)
+  - Choose 'k' nearest neighbors
+  - Predict based on those neighbors
+
+• Example:
+
+IQ | CGPA | Placement
+80 | 8.0  | Y
+70 | 7.0  | N
+
+New Data: (103, 7.3)
+
+Step 1: Calculate distance from existing points
+Step 2: Find nearest neighbor(s)
+Step 3: Predict output
+
+• If k = 1:
+  → Choose the nearest data point and assign its label
+
+• If k > 1:
+  → Use majority voting
+  → If Yes > No → Predict Yes
+
+• Key Points:
+  - No model is built
+  - High storage requirement
+  - Slower prediction (runtime computation)
+  - Sensitive to irrelevant features
+
+• Example Algorithm:
+  - K-Nearest Neighbors (KNN)
+
+--------------------------------------------------
+
+-> Model-Based Learning (MBL)
+
+• It is based on generalization.
+• A model is created by learning patterns from data.
+• There IS a training phase.
+
+• During training:
+  - The algorithm learns a function (mapping input → output)
+  - Example: y = mx + b (in linear regression)
+
+• After training:
+  - Model is used to make predictions on new data
+  - No need to store entire dataset
+
+• Example:
+
+IQ | CGPA | Placement
+(Training data used to build a model)
+
+The model learns patterns like:
+  → Higher CGPA → Higher chance of placement
+
+Now for new data (103, 7.3):
+  → Model directly predicts output using learned pattern
+
+• Key Points:
+  - Model is built during training
+  - Faster prediction (no need to compare with all data)
+  - Lower storage requirement
+  - Can generalize to unseen data
+
+• Examples of Algorithms:
+  - Linear Regression
+  - Logistic Regression
+  - Decision Trees
+
+--------------------------------------------------
+
+****Key Difference****
+
+Instance-Based Learning:
+→ Memorizes data
+→ No training phase
+→ Slow prediction
+
+Model-Based Learning:
+→ Learns patterns (generalization)
+→ Has training phase
+→ Fast prediction
