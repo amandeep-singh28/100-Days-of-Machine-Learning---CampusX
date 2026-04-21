@@ -234,3 +234,40 @@ Suppose a new data comes 103,7.3. We have to predict whether the student is plac
 ->Model Based Learning
 Model tries to learn the behaviour of the data.
 Training phase is there.
+
+
+****Challenges in Machine Learning****
+(i)Data Collection
+API, Web Scraping
+Data may be incomplete, inconsistent or noisy.
+
+(ii)Insufficient Data / Labelled Data
+ML needs large and labelled data.
+Labelling is costly and slow
+
+Suppose you have models A and B.
+In model A there are 100 rows and it is performing good.
+In model B there are 10^6 rows and it is not performing good as model A.
+So which model is better??
+Model B is better (KINDDD OFFF but not always true)
+
+
+→ It depends on evaluation, NOT just data size.
+
+• Important Concept:
+
+1. If Model B is underperforming:
+   - It may have issues like:
+     • Poor data quality
+     • Noise in data
+     • Wrong features
+     • Underfitting
+
+2. Large data is generally better ONLY IF:
+   - Data is clean
+   - Data is relevant
+   - Model is properly trained
+
+✔ Conclusion:
+→ More data ≠ Better model always
+→ Quality of data matters more than quantity
