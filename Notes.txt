@@ -394,3 +394,8 @@ Data warehousing
 Build data pipelines
 Handle databases
 
+(ii)Data Analyst
+Cleaning and organizing raw data.
+Analyzing data to derive insights
+Creating data visualization
+
