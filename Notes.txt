@@ -349,3 +349,10 @@ Because there is a high demand from customers but low availability of cabs. So a
 
 So what these services do is, they increase the price. In this way, the driver gets more money and is encouraged to go to that area, and the customer also has to pay more.
 
+(iv) Manufacturing
+For example:- (Tesla Company)
+Like Apple is famous in the phone industry, similarly Tesla is famous in the car industry. Whenever a person books a new Tesla, it may take around 4–5 months for delivery of that model.
+
+There are robots which build the Tesla models, but what if one robot suddenly stops working? Now the company cannot delay the services because it will create bad feedback and affect the company’s reputation.
+
+To solve this problem, they place IoT-based sensors on the robots and continuously check their performance. If, for example, the RPM of a machine suddenly increases, they can detect it early and fix the issue. This type of prediction is done using ML.
