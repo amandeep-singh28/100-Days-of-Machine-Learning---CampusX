@@ -419,3 +419,11 @@ Tensor -> Way to store data
 More breakdown → It is a container which stores numbers. Generally, tensors store numerical data. Storing characters or strings is possible, but in ML and DL it is very rare because models mostly work with numbers.
 
 Vectors/ matrix -> Also use tensor
+
+->Types of tensors based on Dimension
+(i)0D Tensors/ Scalar
+If you are storing a single number this is known as Scaler.
+0D means -> For this particular tensor it has zero Dimension.
+
+nd array = TENSOR
+
