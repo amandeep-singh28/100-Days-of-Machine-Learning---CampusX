@@ -327,3 +327,8 @@ Outliers, Missing Values
 For example:-
 Every once a year there is a Great Indian Festival Sale on Amazon. Amazon almost sells 6 crore products in a year. So, do you think every year they build up a stock for more than 6 crore items. Answer is No because There is no gurantee that 6 crore+ stock would be sell in the next year.
 What they do is they gave the data to the engineers of the previous years and accordingly by analyzing it they build up the new stock
+
+For example:-
+Most of the retail companies such as Reliance Digital, V Mart, Vishal mega mart ask for your phone number when you done with your shopping.
+We think that they are taking our mobile number because they will sent us the offer SMS or Sale SMS kind of. But this is not only the reason, they also identify customer buying behaviour, they create profiles on the basis of your number like what are you most buying if health things it means that you are health cautious.
+They may use this data for marketing purposes, and that is why sometimes you get SMS from other websites on which you have not registered.
