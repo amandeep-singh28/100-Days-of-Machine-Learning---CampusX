@@ -403,3 +403,9 @@ Creating data visualization
 A data scientist is someone who is better at statistics than any software engineer and better at software engineering than any statistician.
 
 Data Scientist looks at the future, while Data Analyst looks at the past and gives a summary to the user.
+
+(iv)ML Engineer
+Deploying machine learning models
+Scaling and optimizing the model for production
+Monitoring and maintenance of deployed models
+
