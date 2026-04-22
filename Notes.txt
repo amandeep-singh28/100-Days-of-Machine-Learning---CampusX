@@ -382,3 +382,15 @@ This data can be used to understand public opinion and trends. Some analysts or 
 (viii)Testing
 Beta Testing:- Give the feature/product to trusted customers to test it.
 (ix)Optimize
+
+
+****Data Engineer Vs Data Analyst Vs Data Scientist Vs ML Engineer****
+
+Why there are so much of profiles?? See the MLDLC (One person cannot do the work alone)
+
+(i)Data Engineer
+Scrape the data from the given sources
+Data warehousing
+Build data pipelines
+Handle databases
+
