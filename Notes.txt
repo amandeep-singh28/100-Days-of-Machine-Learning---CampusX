@@ -339,3 +339,13 @@ For example:-
 When you apply for a loan, firstly you need to submit your profile (banking profile). Most of the people get rejected for the loan because the bank analyzes the profile in two ways — through ML and through a banking officer (at the end it is the responsibility of the officer to approve or reject the loan).
 
 Through ML, it is done in such a way that your profile gets compared with previous bank defaulters who have not repaid their loans. If there is a strong similarity, then there are chances that you may not repay the loan on time.
+
+(iii) Transportation 
+For example:- (Ola Service)
+There is a sudden spike in the price of rides, especially in the morning or evening. A person has to pay more than the normal price.
+
+The driver has a specific driver app in which it shows different colors, and most of the regions are in RED. WHY??
+Because there is a high demand from customers but low availability of cabs. So a normal driver may not go there if the distance is more or not profitable.
+
+So what these services do is, they increase the price. In this way, the driver gets more money and is encouraged to go to that area, and the customer also has to pay more.
+
