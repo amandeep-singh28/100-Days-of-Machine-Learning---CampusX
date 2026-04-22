@@ -371,7 +371,7 @@ This data can be used to understand public opinion and trends. Some analysts or 
 
 
 
-****MLDLC (Machine Learning Development Life Cycle)
+****MLDLC (Machine Learning Development Life Cycle)****
 (i)Framing the problem
 (ii)Gathering the data
 (iii)Data Preprocessing
