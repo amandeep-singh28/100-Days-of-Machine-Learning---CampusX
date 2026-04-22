@@ -320,3 +320,10 @@ Outliers, Missing Values
 (ix)Offline Learning / Deployment
 
 (x)Cost Involved
+
+
+****Applications of Machine Learning****
+(i)Application in Retail Sector
+For example:-
+Every once a year there is a Great Indian Festival Sale on Amazon. Amazon almost sells 6 crore products in a year. So, do you think every year they build up a stock for more than 6 crore items. Answer is No because There is no gurantee that 6 crore+ stock would be sell in the next year.
+What they do is they gave the data to the engineers of the previous years and accordingly by analyzing it they build up the new stock
