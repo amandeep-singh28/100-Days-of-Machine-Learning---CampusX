@@ -332,3 +332,10 @@ For example:-
 Most of the retail companies such as Reliance Digital, V Mart, Vishal mega mart ask for your phone number when you done with your shopping.
 We think that they are taking our mobile number because they will sent us the offer SMS or Sale SMS kind of. But this is not only the reason, they also identify customer buying behaviour, they create profiles on the basis of your number like what are you most buying if health things it means that you are health cautious.
 They may use this data for marketing purposes, and that is why sometimes you get SMS from other websites on which you have not registered.
+
+
+(ii) Banking and Finance
+For example:-
+When you apply for a loan, firstly you need to submit your profile (banking profile). Most of the people get rejected for the loan because the bank analyzes the profile in two ways — through ML and through a banking officer (at the end it is the responsibility of the officer to approve or reject the loan).
+
+Through ML, it is done in such a way that your profile gets compared with previous bank defaulters who have not repaid their loans. If there is a strong similarity, then there are chances that you may not repay the loan on time.
