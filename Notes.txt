@@ -409,3 +409,13 @@ Deploying machine learning models
 Scaling and optimizing the model for production
 Monitoring and maintenance of deployed models
 
+****Tensors****
+It is a data structure(Way to store the data)
+
+Why Tensor??
+Libraries like Tensor Flow, they use the basic data structure which is Tensor. Even if you are dealing with any problem related to ML and DL, you have to deal with the Tensor.
+
+Tensor -> Way to store data
+More breakdown → It is a container which stores numbers. Generally, tensors store numerical data. Storing characters or strings is possible, but in ML and DL it is very rare because models mostly work with numbers.
+
+Vectors/ matrix -> Also use tensor
