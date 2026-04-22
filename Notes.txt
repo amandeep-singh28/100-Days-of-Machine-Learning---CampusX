@@ -362,3 +362,9 @@ For example:- (Twitter)
 At some point, Twitter was facing financial issues and was not making as much profit as Facebook. To improve their platform, they used techniques like sentiment analysis to understand user opinions from tweets. By analyzing whether the tweets are positive, negative, or neutral, they can improve content recommendations and user engagement.
 
 This leads to more user activity on the platform, which helps in increasing advertisement revenue and improving the company’s financial condition.
+
+For example:- (Elections)
+For example:-
+There are going to be elections in India. Suppose between Mamata Banerjee and Narendra Modi. Platforms like Twitter can analyze tweets using sentiment analysis. They can find that, for example, 65% of the tweets are positive for Narendra Modi and the rest are positive for the opposition party.
+
+This data can be used to understand public opinion and trends. Some analysts or companies may use such insights along with other factors to study the market. Based on multiple analyses, investors may decide to invest in certain stocks, but profit is not guaranteed because stock prices depend on many factors.
