@@ -356,3 +356,9 @@ Like Apple is famous in the phone industry, similarly Tesla is famous in the car
 There are robots which build the Tesla models, but what if one robot suddenly stops working? Now the company cannot delay the services because it will create bad feedback and affect the company’s reputation.
 
 To solve this problem, they place IoT-based sensors on the robots and continuously check their performance. If, for example, the RPM of a machine suddenly increases, they can detect it early and fix the issue. This type of prediction is done using ML.
+
+(v)Consumer Internet
+For example:- (Twitter)
+At some point, Twitter was facing financial issues and was not making as much profit as Facebook. To improve their platform, they used techniques like sentiment analysis to understand user opinions from tweets. By analyzing whether the tweets are positive, negative, or neutral, they can improve content recommendations and user engagement.
+
+This leads to more user activity on the platform, which helps in increasing advertisement revenue and improving the company’s financial condition.
