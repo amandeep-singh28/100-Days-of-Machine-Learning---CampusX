@@ -368,3 +368,17 @@ For example:-
 There are going to be elections in India. Suppose between Mamata Banerjee and Narendra Modi. Platforms like Twitter can analyze tweets using sentiment analysis. They can find that, for example, 65% of the tweets are positive for Narendra Modi and the rest are positive for the opposition party.
 
 This data can be used to understand public opinion and trends. Some analysts or companies may use such insights along with other factors to study the market. Based on multiple analyses, investors may decide to invest in certain stocks, but profit is not guaranteed because stock prices depend on many factors.
+
+
+
+****MLDLC (Machine Learning Development Life Cycle)
+(i)Framing the problem
+(ii)Gathering the data
+(iii)Data Preprocessing
+(iv)Exploratory Data Analysis(EDA)
+(v)Feature engineering and Scaling
+(vi)Model training evaluation and Selection
+(vii)Model Deployment
+(viii)Testing
+Beta Testing:- Give the feature/product to trusted customers to test it.
+(ix)Optimize
