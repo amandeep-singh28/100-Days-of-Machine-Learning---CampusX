@@ -457,3 +457,10 @@ CGPA|IQ|State|Placement(Y/N)
 8.1  91 WB    1
 
 In the ML model we will give this data [9.1, 91, WB = 0] which is actually a 1D Tensor having 3 Vectors
+
+(ii)Example of 2D Tensors
+Collection of 1D Tensors
+CGPA|IQ|State|Placement(Y/N) {Dataset = 10000}
+
+Collection of 10000 records will be 2D tensors. For example when we divide our dataset into X and y
+
