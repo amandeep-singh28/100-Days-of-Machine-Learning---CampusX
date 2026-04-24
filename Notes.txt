@@ -443,3 +443,9 @@ If we combine multiple vectors/ 1D tensors we get 2D tensors
 a = [1, 2, 3], b = [1, 2, 3]
 [[1, 2, 3], -> 2D tensors
  [1, 2, 3]]
+
+
+->Rank, Axes and Shape
+Rank = Axes -> No of Dimension in the Tensor
+Shape = ((No of rows), (No of columns))
+
