@@ -449,3 +449,11 @@ a = [1, 2, 3], b = [1, 2, 3]
 Rank = Axes -> No of Dimension in the Tensor
 Shape = ((No of rows), (No of columns))
 
+
+->Examples of Tensors(1D - 5D)
+(i)Example of 1D Tensors
+Lets say we have Student dataset(10,000):-
+CGPA|IQ|State|Placement(Y/N)
+8.1  91 WB    1
+
+In the ML model we will give this data [9.1, 91, WB = 0] which is actually a 1D Tensor having 3 Vectors
