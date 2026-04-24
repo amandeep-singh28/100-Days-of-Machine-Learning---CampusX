@@ -464,3 +464,25 @@ CGPA|IQ|State|Placement(Y/N) {Dataset = 10000}
 
 Collection of 10000 records will be 2D tensors. For example when we divide our dataset into X and y
 
+(iii)Example of 3D tensors
+It is not frequent as 1D and 2D tensor
+
+Whenever you work with text data we get 3D tensor. For example:-
+Hi Nitish
+Hi Rahul
+Hi Ankit
+ML cannot understand data in Categorical form, so we need to convert it into Numerical(NLP)
+
+Hi  | Nitish  | Rahul | Ankit
+1       0         0       0
+0       1         0       0
+0       0         1       0
+0       0         0       1
+
+So, Hi Nitish will be [[1, 0, 0, 0], [0, 1, 0, 0]]
+It is a 2D tensor. So collection of all of them will be 3D tensor.
+[
+  [[1, 0, 0, 0], [0, 1, 0, 0]]
+  [[1, 0, 0, 0], [0, 0, 1, 0]]
+  [[1, 0, 0, 0], [0, 0, 0, 1]]
+]
