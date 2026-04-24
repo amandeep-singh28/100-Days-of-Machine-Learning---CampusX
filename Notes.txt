@@ -437,3 +437,9 @@ No. of axes = rank/ Dimension
 [1, 2, 3, 4] -> It is a 1d Tensor or we can say it is a vector. But how many Dimension it has for the vector(It will be number of elements inside the 1D Tensor). For example:-
 [1, 2, 3] -> 3D vector
 [1, 2] -> 2D vector
+
+(iii)2D Tensors/ Matrices
+If we combine multiple vectors/ 1D tensors we get 2D tensors
+a = [1, 2, 3], b = [1, 2, 3]
+[[1, 2, 3], -> 2D tensors
+ [1, 2, 3]]
