@@ -486,3 +486,12 @@ It is a 2D tensor. So collection of all of them will be 3D tensor.
   [[1, 0, 0, 0], [0, 0, 1, 0]]
   [[1, 0, 0, 0], [0, 0, 0, 1]]
 ]
+
+(iv)Example of 3D Tensors
+Image based data
+Image is collection of pixel and in every pixel there is some numerical value.
+
+If you want to use it as COLOR CHANNEL, it will be combination of 3(R, G, B) -> 3D tensors (For 1 Image Only)
+
+But for 50,000 images, it will be 4D Tensors
+
