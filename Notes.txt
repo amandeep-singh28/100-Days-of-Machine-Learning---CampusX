@@ -495,3 +495,6 @@ If you want to use it as COLOR CHANNEL, it will be combination of 3(R, G, B) -> 
 
 But for 50,000 images, it will be 4D Tensors
 
+(v)Example of 5D tensors
+Video based data
+Video = Collection of frames
