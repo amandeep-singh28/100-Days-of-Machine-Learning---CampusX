@@ -427,3 +427,9 @@ If you are storing a single number this is known as Scaler.
 
 nd array = TENSOR
 
+
+(ii)1D Tensors/ Vector
+[1, 2, 3, 4] -> 1D Tensor, Vector, 1D Array, nDim = 1
+
+Axis = Dimension
+No. of axes = rank/ Dimension
