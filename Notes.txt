@@ -487,7 +487,7 @@ It is a 2D tensor. So collection of all of them will be 3D tensor.
   [[1, 0, 0, 0], [0, 0, 0, 1]]
 ]
 
-(iv)Example of 3D Tensors
+(iv)Example of 4D Tensors
 Image based data
 Image is collection of pixel and in every pixel there is some numerical value.
 
