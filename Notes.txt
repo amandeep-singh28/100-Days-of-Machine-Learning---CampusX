@@ -433,3 +433,7 @@ nd array = TENSOR
 
 Axis = Dimension
 No. of axes = rank/ Dimension
+
+[1, 2, 3, 4] -> It is a 1d Tensor or we can say it is a vector. But how many Dimension it has for the vector(It will be number of elements inside the 1D Tensor). For example:-
+[1, 2, 3] -> 3D vector
+[1, 2] -> 2D vector
