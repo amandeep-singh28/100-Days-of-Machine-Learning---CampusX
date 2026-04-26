@@ -567,3 +567,8 @@ pd.read_csv('aug_train.csv', nrows = 100)
 By-default read_csv() has UTF-8 encoding. But sometimes some datasets have another type of encoding. For example:-
 
 pd.read_csv('zomato.csv', encoding = 'latin-1')
+
+(ix)on_bad_lines parameter
+It is used when a row has too many or too few columns compared to expected. For example:-
+
+pd.read_csv('BX-Books.csv', sep=';', encoding="latin-1",on_bad_lines='skip')
