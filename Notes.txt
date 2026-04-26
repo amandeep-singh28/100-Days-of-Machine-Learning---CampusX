@@ -534,3 +534,10 @@ For example:-
 pd.read_csv('movie_titles_metadata.tsv', sep = '\t',names = ['sno', 'name', 'release_year', 'rating', 'votes', 'genres'])
 
 
+(iii)index_col parameter
+By default, pandas create an index column whenever you load a dataset.
+You can replace that column with your column that exists in your dataset with the help of index_col parameter
+
+For example:-
+pd.read_csv('aug_train.csv', index_co l= 'enrollee_id')
+
