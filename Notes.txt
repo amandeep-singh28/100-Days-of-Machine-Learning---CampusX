@@ -546,3 +546,9 @@ It is used when in your dataset your first row is not about column names but you
 
 pd.read_csv('test.csv', header=1)
 header = 1 cotains column names, so finally the column names would be visible instead treating it as a row.
+
+(v)use_cols parameter
+Suppose when you are loading a dataset but you only want specific columns to work upon. For example:-
+
+pd.read_csv('aug_train.csv', usecols = ['enrollee_id', 'gender', 'education_level'])
+
