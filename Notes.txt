@@ -498,3 +498,13 @@ But for 50,000 images, it will be 4D Tensors
 (v)Example of 5D tensors
 Video based data
 Video = Collection of frames
+
+
+****How to frame a ML problem****
+(i)Try to frame the business problem into mathematical problem
+(ii)Type of problem
+(iii)Current Situation
+(iv)Getting Data
+(v)Metrics to measure
+(vi)Online vs Batch??
+(vii)Check Assumptions
