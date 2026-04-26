@@ -581,3 +581,8 @@ To save the memory.
 For example:-
 "target" column was stored in a float64 datatype which is of no-use.
 pd.read_csv('aug_train.csv', dtype = {'target':int}).info()
+
+(x)parse_dates parameter
+Generally when you store the date in the dataset, pandas automatically treats date column as "OBJECT"(string) datatype. You cannot use date-time function, to solve this convert object datatype into datetime data type using parse_dates.
+For example:-
+pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\IPL Matches 2008-2020.csv',parse_dates=['date']).info()
