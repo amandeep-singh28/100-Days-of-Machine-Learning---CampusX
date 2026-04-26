@@ -563,3 +563,7 @@ You will load that particular number of rows only in your df.
 For example:-
 pd.read_csv('aug_train.csv', nrows = 100)
 
+(viii)encoding parameter
+By-default read_csv() has UTF-8 encoding. But sometimes some datasets have another type of encoding. For example:-
+
+pd.read_csv('zomato.csv', encoding = 'latin-1')
