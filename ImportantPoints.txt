@@ -4,3 +4,12 @@ plot_decision_regions(X_train, y_train.values, clf = model, legend = 2)
 
 Why y_train.values??
 Because we are plotting values so it must be in array form
+
+
+->How to save your model??
+Use pickle library
+-pickle is used for serializing and deserializing objects.
+-It helps you save a Python object (like a model) to a file
+
+import pickle
+pickle.dump(model, open('model.pkl', 'wb'))
