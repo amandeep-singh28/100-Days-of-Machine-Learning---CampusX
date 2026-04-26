@@ -523,8 +523,14 @@ You can import the data from the CSV files in two ways:-
 
 
 ->Parameters in read_csv()
-(i)sep()
+(i)sep parameter
 By default read_csv() has separater "," which is for CSV files only. But what if the data is in the form of TSV(Tab Separated Values), use "sep" parameter in this case.
 (sep = '\t')
+
+(ii)names parameter
+This parameter is used when column names are not given in your dataset. You can provide an array of list.
+
+For example:-
+pd.read_csv('movie_titles_metadata.tsv', sep = '\t',names = ['sno', 'name', 'release_year', 'rating', 'votes', 'genres'])
 
 
