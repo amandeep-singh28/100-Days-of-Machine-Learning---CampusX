@@ -555,4 +555,11 @@ pd.read_csv('aug_train.csv', usecols = ['enrollee_id', 'gender', 'education_leve
 (vi)skip_rows parameter
 With the help of this function you can skip rows. It will not be loaded in your df. For example:-
 
-pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\aug_train.csv',skiprows=[0, 1])
+pd.read_csv('aug_train.csv', skiprows = [0, 1])
+
+(vii)nrows parameter
+It will restrict the number of rows
+You will load that particular number of rows only in your df.
+For example:-
+pd.read_csv('aug_train.csv', nrows = 100)
+
