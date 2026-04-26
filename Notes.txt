@@ -552,3 +552,7 @@ Suppose when you are loading a dataset but you only want specific columns to wor
 
 pd.read_csv('aug_train.csv', usecols = ['enrollee_id', 'gender', 'education_level'])
 
+(vi)skip_rows parameter
+With the help of this function you can skip rows. It will not be loaded in your df. For example:-
+
+pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\aug_train.csv',skiprows=[0, 1])
