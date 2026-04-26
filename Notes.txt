@@ -515,3 +515,9 @@ Video = Collection of frames
 (ii)JSON/SQL
 (iii)Fetch data from API
 (iv)Web Scrapping
+
+->CSV Files
+You can import the data from the CSV files in two ways:-
+(i)File in in local machine (pd.read_csv)
+(ii)Fetch CSV file from an URL (Through requests)
+
