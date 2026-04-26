@@ -508,3 +508,10 @@ Video = Collection of frames
 (v)Metrics to measure
 (vi)Online vs Batch??
 (vii)Check Assumptions
+
+
+****Data Gathering****
+(i)CSV Files
+(ii)JSON/SQL
+(iii)Fetch data from API
+(iv)Web Scrapping
