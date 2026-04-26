@@ -572,3 +572,12 @@ pd.read_csv('zomato.csv', encoding = 'latin-1')
 It is used when a row has too many or too few columns compared to expected. For example:-
 
 pd.read_csv('BX-Books.csv', sep=';', encoding="latin-1",on_bad_lines='skip')
+
+(ix)dtypes parameter
+This parameter is used when you forcefully want to change the data type of the column while loading your dataset.
+Why??
+To save the memory.
+
+For example:-
+"target" column was stored in a float64 datatype which is of no-use.
+pd.read_csv('aug_train.csv', dtype = {'target':int}).info()
