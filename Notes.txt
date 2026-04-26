@@ -541,3 +541,8 @@ You can replace that column with your column that exists in your dataset with th
 For example:-
 pd.read_csv('aug_train.csv', index_co l= 'enrollee_id')
 
+(iv)header parameter
+It is used when in your dataset your first row is not about column names but your column names exist in your dataset. And you want to fix this. For example:-
+
+pd.read_csv('test.csv', header=1)
+header = 1 cotains column names, so finally the column names would be visible instead treating it as a row.
