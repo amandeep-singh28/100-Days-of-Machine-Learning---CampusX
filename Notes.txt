@@ -602,3 +602,9 @@ def rename(name):
         return name
 
 pd.read_csv('IPL Matches 2008-2020.csv',converters={'team1':rename})
+
+(xii)na_values parameter
+It is used when in your dataset the missing values are represented by the custom strings like '-', '/', etc. So before loading the dataset you can like replace those custom strings with NaN and can do data cleaning easily. For example:-
+pd.read_csv('aug_train.csv',na_values=['-', '.'])
+
+All custom strings '-' and '.' will be replaced with NaN values
