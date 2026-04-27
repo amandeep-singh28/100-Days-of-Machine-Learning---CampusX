@@ -650,3 +650,17 @@ And also since a connection is already been created in workbench, if you will st
 So instead of using this, create a new connection in which password must remain empty. It will directly gets connected to your XAMPP database.
 
 Hit this URL on chrome (localhost/phpmyadmin/), you will see your XAMPP database.
+
+
+->Fetching data from an API
+API -> Application Programming interface
+
+API = Data Pipeline = Transfers data from Point A to Point B
+
+Steps:-
+(i)Go to TMDB.org and create your account and in the settings option you will get your API key.
+(ii)Go to THE MOVIES DATABASE, and select any movie URL. For example:-
+https://api.themoviedb.org/3/movie/top_rated?api_key=0e3496ca5dc92a81a1f72995d9f6c5a2
+(iii)Go to chrome and search for JSON Viewer and paste the entire Data there, You will get information related to that API.
+(iv)Columns that we will fetach from the API:- id, title, release date, overviewm, popularity, vote_average, vote_count
+(v)Shape -> 8551 * 7{FOR 541 pages}
