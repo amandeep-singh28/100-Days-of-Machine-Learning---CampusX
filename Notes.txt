@@ -671,3 +671,6 @@ Implementation:-
 requests.get('https://api.themoviedb.org/3/movie/top_rated?api_key=0e3496ca5dc92a81a1f72995d9f6c5a2')
 -If succesfully done, you will get output as RESPONSE 200
 -df = pd.DataFrame(response.json()['results'])[['id', 'title', 'overview', 'release_date', 'popularity', 'vote_average', 'vote_count']]
+
+Note:-
+You can generate the data from "rapidAPI" and can upload that on kaggle. You will get good recognition by doing this.
