@@ -613,3 +613,18 @@ All custom strings '-' and '.' will be replaced with NaN values
 Sometimes the dataset is very huge and you cannot directly import it.
 What you can do is, You can load the dataset and than can work upon. For example:-
 dfs = pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\aug_train.csv',chunksize=5000)
+
+
+
+->Working with JSON/SQL files
+JSON -> JavaScript Object Notation (Universal Format -> Almost Every programming languages can use this)
+
+You can load the JSON data in two ways:- (i)Using dataset (ii)Using URL
+
+(i)Using Dataset
+Just use pd.read_json -> Data automatically gets converted into dataframe. For example:-
+-pd.read_json('train.json')
+
+(ii)Using URL
+pd.read_json('https://api.exchangerate-api.com/v4/latest/INR')
+
