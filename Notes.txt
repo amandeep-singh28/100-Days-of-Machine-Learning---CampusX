@@ -662,5 +662,12 @@ Steps:-
 (ii)Go to THE MOVIES DATABASE, and select any movie URL. For example:-
 https://api.themoviedb.org/3/movie/top_rated?api_key=0e3496ca5dc92a81a1f72995d9f6c5a2
 (iii)Go to chrome and search for JSON Viewer and paste the entire Data there, You will get information related to that API.
-(iv)Columns that we will fetach from the API:- id, title, release date, overviewm, popularity, vote_average, vote_count
+(iv)Columns that we will fetch from the API:- id, title, release date, overviewm, popularity, vote_average, vote_count
 (v)Shape -> 8551 * 7{FOR 541 pages}
+
+Implementation:-
+-We will use requests and pandas Library
+-Using requests you will use get() to fetch data from API. For example:-
+requests.get('https://api.themoviedb.org/3/movie/top_rated?api_key=0e3496ca5dc92a81a1f72995d9f6c5a2')
+-If succesfully done, you will get output as RESPONSE 200
+-df = pd.DataFrame(response.json()['results'])[['id', 'title', 'overview', 'release_date', 'popularity', 'vote_average', 'vote_count']]
