@@ -588,3 +588,17 @@ For example:-
 pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\IPL Matches 2008-2020.csv',parse_dates=['date']).info()
 
 If suppose date, month and year are in the separate columns. Than you can pass dictionary like this ["new_date": [1, 3]]
+
+
+(xi)converts parameter
+It is used when we want to change a specific values in the column. For example:- You want to replace Male with M before loading the dataset.
+How it works??
+You have to create a function in which you have coded the functionality you want and when using the "converts" parameter pass your "column_name" and "function_name" in the form of dictionary. For example:-
+
+def rename(name):
+    if name == "Royal Challengers Bangalore":
+        return "RCB"
+    else:
+        return name
+
+pd.read_csv('IPL Matches 2008-2020.csv',converters={'team1':rename})
