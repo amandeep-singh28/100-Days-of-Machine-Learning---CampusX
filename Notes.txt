@@ -628,3 +628,16 @@ Just use pd.read_json -> Data automatically gets converted into dataframe. For e
 (ii)Using URL
 pd.read_json('https://api.exchangerate-api.com/v4/latest/INR')
 
+->SQL Part
+You can read an SQL table using "pd.read_sql_query" in python.
+
+(i)Download XAMPP control panel
+(ii)Run Apache(Web Server) and MySql(Database server)
+(iii)Search this URL on chrome (localhost/phpmyadmin/)
+(iv)Create a new database named "world"
+(v)Select that database, choose import and select the world.sql file.
+(vi)You will see the tables in that database
+
+Now you need to connect the databse using mysql.connector
+-conn = mysql.connector.connect(host='localhost',user='root',password='',database='world')
+-df = pd.read_sql_query("SELECT * FROM countrylanguage",conn)
