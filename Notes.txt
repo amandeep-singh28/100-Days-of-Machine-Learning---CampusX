@@ -641,3 +641,12 @@ You can read an SQL table using "pd.read_sql_query" in python.
 Now you need to connect the databse using mysql.connector
 -conn = mysql.connector.connect(host='localhost',user='root',password='',database='world')
 -df = pd.read_sql_query("SELECT * FROM countrylanguage",conn)
+
+Note:-
+Since MYSQL workbench also exists in my laptop, it is using port 3306 and for XAMPP port 3306 is required if you want to launch MySQL service.
+Go to "services" and search for "MySQL80" and stop that service. After that open XAMPP and start the MySQL service.
+
+And also since a connection is already been created in workbench, if you will stop the service it will not work.
+So instead of using this, create a new connection in which password must remain empty. It will directly gets connected to your XAMPP database.
+
+Hit this URL on chrome (localhost/phpmyadmin/), you will see your XAMPP database.
