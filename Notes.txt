@@ -586,3 +586,5 @@ pd.read_csv('aug_train.csv', dtype = {'target':int}).info()
 Generally when you store the date in the dataset, pandas automatically treats date column as "OBJECT"(string) datatype. You cannot use date-time function, to solve this convert object datatype into datetime data type using parse_dates.
 For example:-
 pd.read_csv(r'E:\100 Days of Machine Learning - CampusX\02_WorkingWithCSVFiles\Datasets\IPL Matches 2008-2020.csv',parse_dates=['date']).info()
+
+If suppose date, month and year are in the separate columns. Than you can pass dictionary like this ["new_date": [1, 3]]
