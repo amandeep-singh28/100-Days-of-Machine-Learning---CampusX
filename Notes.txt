@@ -723,3 +723,13 @@ There is a function called find_all(). With the help of this function you can ex
 It is searching the HTML page and returning all the headings which are written under h1 tag.
 .text -> It is just displaying in the form of text rather HTML text.
 
+
+(vi)If you will consider the whole container than it will be way good. For example:-
+The website which we were extracting the information has container in which for every container there is information about a particular company.
+
+company = soup.find_all('div', class_ = 'companyCardWrapper')
+
+Now if you will traverse "company". You are basically traversing every container and you can also extract the information of every container like this:-\
+
+for i in company:
+    print(i.find('h2').text.strip())
