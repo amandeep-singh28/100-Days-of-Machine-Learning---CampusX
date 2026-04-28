@@ -733,3 +733,38 @@ Now if you will traverse "company". You are basically traversing every container
 
 for i in company:
     print(i.find('h2').text.strip())
+
+
+
+****Understanding Your Data****
+(i)Asking Basic Questions
+(ii)EDA (Univariate)
+(iii)EDA (Multivariate)
+(iv)Pandas Profiler
+
+->Asking Basic Questions
+(i)How big is the data?
+Number of columns and number of rows
+df.shape
+
+(ii)How does the data look like?
+df.head()
+Use df.sample(5) instead of head() because it takes random rows
+
+(iii)What is the data type of cols?
+Changing the cols type saves a lot of memory. For example:- Age column
+df.info()
+
+(iv)Are there any missing values?
+df.isnull().sum()
+df.isnull().sum().sum()
+
+(v)How does the data look mathematically?
+df.describe() -> You will get insights for the numerical columns only
+
+(vi)Are there duplicate values?
+df.duplicated().sum() -> It will tell how many rows are duplicated
+
+(vii)How is the correlation between cols?
+Correlation -> Correlation measures how two variables move together — whether they increase/decrease together or move in opposite directions.
+
