@@ -674,3 +674,13 @@ requests.get('https://api.themoviedb.org/3/movie/top_rated?api_key=0e3496ca5dc92
 
 Note:-
 You can generate the data from "rapidAPI" and can upload that on kaggle. You will get good recognition by doing this.
+
+
+->Fetching data using Web Scrapping
+It is like you are not able to get the dataset from kaggle or any other source and also you were not able to fetch the data from the API. Than the last possible option is available for you to get the data is WEB SCRAPPING.
+
+Use scraping only if ALL of these are true:
+❌ No API available (public or hidden)
+❌ No dataset exists
+❌ No export option
+✅ Data is visible on page HTML
