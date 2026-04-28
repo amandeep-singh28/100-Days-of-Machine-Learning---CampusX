@@ -795,3 +795,23 @@ sns.countplot(x = 'col_name', data = df)
 
 (ii)Use Piechart (If you want to add percentage)
 df['col_name'].value_counts().plot(kind = 'bar', autopct = "%.2f")
+
+If the column is Numerical:-
+(i)Use Histogram -> It shows the spreadness of the data
+plt.hist(x = 'col_name', data = df)
+sns.histplot(x = 'col_name', data = df)
+
+(ii)Use distplot() (****It is deprecated****) -> sns.histplot(x = 'col_name', data = df, kde = True)
+It is similar to the histogram, but it plots KDE and gives the probability too. Works as PDF(Probability Density Function)
+sns.displot(x = 'col_name', data = df)
+
+(iii)Use Boxplot()
+For founding the outliers
+sns.boxplot(x = 'col_name', data = df)
+
+
+->.skew()
+For checking the skewness of the column.
+-If zero = Normal Distribution
+-If < 0 = Negatively left skewed
+-If > 0 = Positively Right skewed
