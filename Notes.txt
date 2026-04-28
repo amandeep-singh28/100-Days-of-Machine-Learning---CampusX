@@ -768,3 +768,19 @@ df.duplicated().sum() -> It will tell how many rows are duplicated
 (vii)How is the correlation between cols?
 Correlation -> Correlation measures how two variables move together — whether they increase/decrease together or move in opposite directions.
 
+Note:-
+Correlation is really helpful if you are working on ML. For example:-
+In Titanic dataset our target column was "Survived". If you use .corr() on "Survived" column, you will get important insights using:-
+df.corr(numeric_only = True)['Survived']
+
+PassengerId   -0.005007
+Survived       1.000000
+Pclass        -0.338481
+Age           -0.077221
+SibSp         -0.035322
+Parch          0.081629
+Fare           0.257307
+
+PassengerId -> Fare (Increasing -> If the passenger has payed more than there is higher chance that he will survive)
+
+PassengerId -> Pclass (In Titanic dataset there were three classes 1, 2, 3 -> 3 represents the lowest class, Higher the class lower the chances of Survival)
