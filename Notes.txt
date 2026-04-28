@@ -690,4 +690,20 @@ There is a website called ambitionbox, We will fetch the data that is there on t
 Company name, rating, reviews, public, headquarter location, How old is company, Total Employees, Company Tags, About of the company
 URL->https://www.ambitionbox.com/list-of-companies?page=1
 
+-Implementation
+(i)from bs4 import BeautifulSoup
+It is the python library which is used for Web-Scrapping.
+bs4(Beautiful Soup 4)
+
+(ii)Whenever you try to access a URL using `requests.get()`, you may receive a **403 Forbidden** error.
+This means the server understands your request but refuses to authorize it.
+Why this happens??
+Because the server is thinking that you are a bot
+
+(iii)Solution??
+Use this code:-
+headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win 64 ; x64) Apple WeKit /537.36(KHTML , like Gecko) Chrome/80.0.3987.162 Safari/537.36'}
+requests.get('url',headers=headers).text
+
+By writing this code you will get the information of the full HTML souce code of that web page.
 
