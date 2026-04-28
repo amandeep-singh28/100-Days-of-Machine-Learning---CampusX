@@ -684,3 +684,10 @@ Use scraping only if ALL of these are true:
 ❌ No dataset exists
 ❌ No export option
 ✅ Data is visible on page HTML
+
+-What we will do??
+There is a website called ambitionbox, We will fetch the data that is there on the website. We will extract the companies data which will include these columns:-
+Company name, rating, reviews, public, headquarter location, How old is company, Total Employees, Company Tags, About of the company
+URL->https://www.ambitionbox.com/list-of-companies?page=1
+
+
