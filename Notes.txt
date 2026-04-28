@@ -707,3 +707,11 @@ requests.get('url',headers=headers).text
 
 By writing this code you will get the information of the full HTML souce code of that web page.
 
+(iv)What is 'lxml'??
+soup = BeautifulSoup(webpage, 'lxml')
+It is HTML parser through which we can traverse easily in the HTML document.
+
+-print(soup.prettify())
+It gives the HTML page in proper format.
+You can also check the HTML page by going to visit the PAGE SOURCE information. It will be the same.
+
