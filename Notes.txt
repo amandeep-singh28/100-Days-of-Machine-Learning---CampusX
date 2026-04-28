@@ -715,3 +715,11 @@ It is HTML parser through which we can traverse easily in the HTML document.
 It gives the HTML page in proper format.
 You can also check the HTML page by going to visit the PAGE SOURCE information. It will be the same.
 
+(v)Understand it carefully now:-
+Our task is to extract the information of the webpage(Web Scrapping). Suppose if you are working on a dataset how will you extract the information?? (Using df.head() right).
+Now you are reading a particular HTML page, what does HTML pages contains?? (div, p, class, id, h1, h2 right).
+There is a function called find_all(). With the help of this function you can extract the information from the HTML page. For example:-
+-soup.find_all('h1')[0].text
+It is searching the HTML page and returning all the headings which are written under h1 tag.
+.text -> It is just displaying in the form of text rather HTML text.
+
