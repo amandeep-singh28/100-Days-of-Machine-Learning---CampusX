@@ -784,3 +784,14 @@ Fare           0.257307
 PassengerId -> Fare (Increasing -> If the passenger has payed more than there is higher chance that he will survive)
 
 PassengerId -> Pclass (In Titanic dataset there were three classes 1, 2, 3 -> 3 represents the lowest class, Higher the class lower the chances of Survival)
+
+
+->EDA (Univariate Analysis)
+Univariate analysis means that we are doing the analysis on a single column.
+
+If the column is Categorical:-
+(i)Use CountPlot
+sns.countplot(x = 'col_name', data = df)
+
+(ii)Use Piechart (If you want to add percentage)
+df['col_name'].value_counts().plot(kind = 'bar', autopct = "%.2f")
