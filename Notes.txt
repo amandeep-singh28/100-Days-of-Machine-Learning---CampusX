@@ -866,3 +866,8 @@ Pclass
 
 62% of the people were survived who were travellin the class 1.
 
+(v)Pairplot
+It gives a grid in which there are scatterplot of every numerical column with each other.
+
+When it will encounter like the same column, it creates a histogram. Because if both the columns are same then there is no need to do the scatterplot as it works on two columns.
+
