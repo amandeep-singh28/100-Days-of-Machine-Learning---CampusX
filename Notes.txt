@@ -815,3 +815,15 @@ For checking the skewness of the column.
 -If zero = Normal Distribution
 -If < 0 = Negatively left skewed
 -If > 0 = Positively Right skewed
+
+->EDA (Multivariate/ Bivariate Analysis)
+When we work upon two columns it is known as Bivariate
+More than two Multivariate
+(i)Scatterplot(Numerical - Numerical)
+If you want to do Bivariate analysis, you will need 2 columns. For example:-
+sns.scatterplot(x = 'total_bill', y = 'tip', data = tips)
+
+If three columns than sns library provide us "hue", "style", "size" parameter in the scatterplot function
+sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', data = tips)  
+sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', style = 'smoker', data = tips)
+sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', style = 'smoker', size = 'size', data = tips)
