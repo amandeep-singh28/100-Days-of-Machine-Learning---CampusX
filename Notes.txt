@@ -836,3 +836,11 @@ sns.barplot(x = 'Pclass', y = 'Fare', data = titanic)
 
 # Multivariate Analysis
 sns.barplot(x = 'Pclass', y = 'Fare', hue = 'Sex', data = titanic)
+
+
+(iii)Boxplot(Numerical to Categorical)
+We can do Bivariate and Multivariate analysis on boxplot too. For example:-
+
+sns.boxplot(x = 'Sex', y = 'Age', data = titanic)
+sns.boxplot(x = 'Sex', y = 'Age', data = titanic, hue = 'Survived')
+
