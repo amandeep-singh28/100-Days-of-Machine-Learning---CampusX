@@ -827,3 +827,12 @@ If three columns than sns library provide us "hue", "style", "size" parameter in
 sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', data = tips)  
 sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', style = 'smoker', data = tips)
 sns.scatterplot(x = 'total_bill', y = 'tip', hue = 'sex', style = 'smoker', size = 'size', data = tips)
+
+(ii)Barplot(Numerical to Categorical)
+The black color line which appears in the barplot graph is known as CI(Confidence Interval)
+
+# Bivariate Analysis
+sns.barplot(x = 'Pclass', y = 'Fare', data = titanic)
+
+# Multivariate Analysis
+sns.barplot(x = 'Pclass', y = 'Fare', hue = 'Sex', data = titanic)
