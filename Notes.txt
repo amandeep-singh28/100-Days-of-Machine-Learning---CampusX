@@ -844,3 +844,25 @@ We can do Bivariate and Multivariate analysis on boxplot too. For example:-
 sns.boxplot(x = 'Sex', y = 'Age', data = titanic)
 sns.boxplot(x = 'Sex', y = 'Age', data = titanic, hue = 'Survived')
 
+(iv)HeatMap (Categorical to Categorical)
+
+****Important****
+pd.crosstab() -> It is used to create a table that shows the frequency of combinations of two or more variables. For example:-
+pd.crosstab(titanic['Pclass'], titanic['Survived'])
+It will display the count of the passenger who were survived and who not in the Pclass.
+
+We can also plot the heatmap for this in which colors will represent the number:-
+sns.heatmap(pd.crosstab(titanic['Pclass'], titanic['Survived']))
+
+->groupby()
+But the best way to showcase the data is in the form of fraction, so we can use groupby()
+titanic.groupby('Pclass')['Survived'].mean() * 100
+
+Output:-
+Pclass
+1    62.962963
+2    47.282609
+3    24.236253
+
+62% of the people were survived who were travellin the class 1.
+
