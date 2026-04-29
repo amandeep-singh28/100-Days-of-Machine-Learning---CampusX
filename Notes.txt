@@ -871,3 +871,5 @@ It gives a grid in which there are scatterplot of every numerical column with ea
 
 When it will encounter like the same column, it creates a histogram. Because if both the columns are same then there is no need to do the scatterplot as it works on two columns.
 
+(vi)Lineplot (Numerical - Numerical)
+Used for time based data
