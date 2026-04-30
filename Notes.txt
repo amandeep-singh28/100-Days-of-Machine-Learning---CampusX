@@ -873,3 +873,8 @@ When it will encounter like the same column, it creates a histogram. Because if 
 
 (vi)Lineplot (Numerical - Numerical)
 Used for time based data
+
+****Pandas Profiler(ydata profiling)****
+The Pandas Profiler (now officially called ydata-profiling) is a Python library used to quickly generate a detailed exploratory data analysis (EDA) report from a Pandas DataFrame — with just one line of code.
+
+Instead of manually checking distributions, missing values, correlations, etc., it creates a full report automatically.
