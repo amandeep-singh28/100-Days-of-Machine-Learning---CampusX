@@ -882,3 +882,10 @@ Instead of manually checking distributions, missing values, correlations, etc., 
 from ydata_profiling import ProfileReport
 profile = ProfileReport(df)
 profile.to_file(output_file = 'output.html')
+
+->Important points(Output file after report)
+(i)'col1' has a high cardinality -> It means that the column has too many unique values compared to the total number of rows
+(ii)Variables -> It does the Univariate analysis on every column
+(iii)Interaction -> Bivariate Analysis
+(iv)Correlation -> Bivariate Analysis
+(v)Sample -> First 5 rows & Last 5 rows
