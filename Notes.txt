@@ -878,3 +878,7 @@ Used for time based data
 The Pandas Profiler (now officially called ydata-profiling) is a Python library used to quickly generate a detailed exploratory data analysis (EDA) report from a Pandas DataFrame — with just one line of code.
 
 Instead of manually checking distributions, missing values, correlations, etc., it creates a full report automatically.
+
+from ydata_profiling import ProfileReport
+profile = ProfileReport(df)
+profile.to_file(output_file = 'output.html')
