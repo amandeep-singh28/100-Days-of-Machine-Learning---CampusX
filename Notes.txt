@@ -889,3 +889,24 @@ profile.to_file(output_file = 'output.html')
 (iii)Interaction -> Bivariate Analysis
 (iv)Correlation -> Bivariate Analysis
 (v)Sample -> First 5 rows & Last 5 rows
+
+
+****Feature Engineering****
+Feature engineering is the process of using domain knowledge to extract features from raw data. These features can be used to improve the performance of machine learning algorithms.
+
+->Parts of feature engineering..
+(i)Feature Transformation
+-Missing value imputation
+-Handling Categorical features
+-Outlier detection
+-Feature Scaling
+
+(ii)Feature Construction
+Sometimes in your dataset, you don't have the features so you create manually.
+
+(iii)Feature Selection
+Selecting the most important features only
+
+(iv)Feature Extraction
+Given features se new feature extract krna programitically while using some algorithms
+
