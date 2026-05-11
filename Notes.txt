@@ -921,6 +921,10 @@ It is a technique to standardize the independent features present in the data in
 
 (i)Standardization (Z-Score)
 Formula -> Xi = Xi - mean /  SD
+Unbounded
 
-After converting the values using the formula than the mean of all those values is 0 and SD as 1.
-
+->Important Points
+(i)After converting the values using the formula than the mean of all those values is 0 and SD as 1.
+(ii)It just scales the values but graph remains the same
+(iii)Scaling is important because it affects the performance meterics
+(iv)Since it just changes the scaling so the outlier will remain outliers only, ypu have to deal with them.
