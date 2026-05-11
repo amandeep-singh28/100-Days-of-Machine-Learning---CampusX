@@ -928,3 +928,25 @@ Unbounded
 (ii)It just scales the values but graph remains the same
 (iii)Scaling is important because it affects the performance meterics
 (iv)Since it just changes the scaling so the outlier will remain outliers only, ypu have to deal with them.
+
+(ii)Normalization
+->Min Max Scaling
+Xi` = Xi - Xmin / Xmax - Xmin
+Bounded (0 to 1)
+
+->Mean Normalization
+Mean Centering
+Xi` = Xi - Xmean / Xmax - Xmin
+Bounded (-1 to 1)
+There is no class in scikit learn, you have to code manually
+
+->MaxAbs Scaling
+Xi` = Xi / |Xmax|
+MaxAbsScaler (Class in scikit learn)
+Useful in sparse data (It means that when you have more number of zeroes in the data)
+
+->Robust Scaling
+Xi` = Xi - Xmedian / IQR {75th per - 25th per}
+RobustScaler (Class in scikit learn)
+It is useful when your dataset contains outliers
+
