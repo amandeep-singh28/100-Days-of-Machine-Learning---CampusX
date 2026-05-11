@@ -910,3 +910,17 @@ Selecting the most important features only
 (iv)Feature Extraction
 Given features se new feature extract krna programitically while using some algorithms
 
+****Feature Scaling****
+It is a technique to standardize the independent features present in the data in a fixed range.
+
+->Types
+(i)Standardization
+(ii)Normalization
+-MinMax Scaler
+-Robust Scaler (Best for outliers)
+
+(i)Standardization (Z-Score)
+Formula -> Xi = Xi - mean /  SD
+
+After converting the values using the formula than the mean of all those values is 0 and SD as 1.
+
