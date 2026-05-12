@@ -953,3 +953,12 @@ It is useful when your dataset contains outliers
 ->Normalization Vs Standardization
 (i)Is feature scaling required or not?
 (ii)Most of the problems is solved using StandardScaler as it gives better result. But use MinMaxScaler when you already know min and max value in your dataset {Ki mtlb throughout the dataset min and max value will remain same only}. For example:- Image Processing (CNN) -> You already know the the min pixel would be 0 and max pixel would be 255.
+
+
+****Encoding Categorical Data****
+Two types of Categorical data:-
+(i)Nominal Data
+There is no order
+(ii)Ordinal Data
+There is order
+
