@@ -999,3 +999,6 @@ To reduce Multicollinearity. If you will notice the columns after Onehotencoding
 But what about the first column data, that data will be gone forever??
 That's not correct, If all columns contain zero than it is obvious that data will be of the first column that we have dropped.
 
+How to solve the problem if there are many distinct values??
+Put the less frequent values into some other column. This will reduce the number of columns. For example:-
+There is a dataset related to cars and brands like Maruti Suzuki and toyota has less number of cars, so create a new column in which those brands will be there
