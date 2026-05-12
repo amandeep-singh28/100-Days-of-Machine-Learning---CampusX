@@ -979,3 +979,23 @@ oe = OrdinalEncoder(categories = [['Poor', 'Average', 'Good'], ['School', 'UG', 
 (i)Give categories in the form of order (0, 1, 2), if you will not give this than it will random number
 (ii)Apply encoding after train_test_split
 (iii)For independent features if there is an order use Ordinal Encoding else OneHotEncoder. For dependent feature use LABEL ENCODING always.
+
+
+(ii)OneHotEncoding
+It is used when there is no order in our data.
+It creates a new column for every category. For example:-
+Color -> Yellow, Blue, Red, Yellow, Red
+For every unique category it will create a new column.
+
+What if there are 50 different categories?
+There is no other option, Use OneHotEncoding only.
+
+Dummy Variable Trap?
+Generally when you do Onehotencoding, you drop 1 column. That column is usually the first column but you can drop anyone of the column after Onehotencoding(n - 1).
+
+Why??
+To reduce Multicollinearity. If you will notice the columns after Onehotencoding, there will be a relationship between the columns i.e. sum of every row will be 1. But there must not exist anytype of relationships between the independent columns that's why we do this.
+
+But what about the first column data, that data will be gone forever??
+That's not correct, If all columns contain zero than it is obvious that data will be of the first column that we have dropped.
+
