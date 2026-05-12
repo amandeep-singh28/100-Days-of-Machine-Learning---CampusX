@@ -962,3 +962,13 @@ There is no order
 (ii)Ordinal Data
 There is order
 
+->How to encode??
+(i)Ordinal Encoding
+Ordinal encoding is used on independent data(columns).
+If the target column is categorical, we use Label Encoder there.
+
+Why??
+(i)Ordinal Encoding is used when there is an order. For example:- Small, Medium, Large. It will encode it as 0, 1 and 2 respectively. It preservers order
+(ii)Label Encoding just give labels to the data. If we use Ordinal Encoding on our target column than it creates a false relationship which can reduce model accuracy. For example:-
+Cat, Dog and Bird -> 0, 1, 2
+If ordinal encoding than, Cat < Dog < Bird which is wrong.
