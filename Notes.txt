@@ -1002,3 +1002,21 @@ That's not correct, If all columns contain zero than it is obvious that data wil
 How to solve the problem if there are many distinct values??
 Put the less frequent values into some other column. This will reduce the number of columns. For example:-
 There is a dataset related to cars and brands like Maruti Suzuki and toyota has less number of cars, so create a new column in which those brands will be there
+
+->Important Points
+You can perform OneHotEncoding in two ways:-
+(i)Through Pandas
+pd.get_dummies(df, columns = ['fuel','owner'], dtype = int, drop_first = True)
+
+(ii)Through sklearn
+from sklearn.preprocessing import OneHotEncoder
+
+ohe = OneHotEncoder(drop = 'first', dtype = 'int')
+# ohe = OneHotEncoder(drop = 'first', dtype = 'int', sparse = False)
+X_train_new = ohe.fit_transform(X_train[['fuel', 'owner']]).toarray()
+X_test_new = ohe.transform(X_test[['fuel', 'owner']]).toarray()
+
+np.hstack((X_train[['brand', 'km_driven']].values, X_train_new))
+
+->If we use OneHotEncoder from sklearn than there is one con, basically we have to merge our encoded column with our dataframe.
+
