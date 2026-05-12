@@ -972,3 +972,10 @@ Why??
 (ii)Label Encoding just give labels to the data. If we use Ordinal Encoding on our target column than it creates a false relationship which can reduce model accuracy. For example:-
 Cat, Dog and Bird -> 0, 1, 2
 If ordinal encoding than, Cat < Dog < Bird which is wrong.
+
+->Important Points
+from sklearn.preprocessing import OrdinalEncoder
+oe = OrdinalEncoder(categories = [['Poor', 'Average', 'Good'], ['School', 'UG', 'PG']])
+(i)Give categories in the form of order (0, 1, 2), if you will not give this than it will random number
+(ii)Apply encoding after train_test_split
+(iii)For independent features if there is an order use Ordinal Encoding else OneHotEncoder. For dependent feature use LABEL ENCODING always.
