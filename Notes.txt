@@ -1025,3 +1025,10 @@ But generally, sklearn method is preferred because of these reasons:-
 (i)pd.get_dummies() -> Creates columns based on current data only. For example:-
 In the training data there are 3 categories, so it will create columns on the existing data only. Now if in the test_data there were only 2 categories, it will not create the column for the 3rd category.
 (ii)But OneHotEncoder Learns categories from training and keeps structure fixed everywhere.
+
+
+****Working with Column Transformer****
+Why ColumnTransformer??
+If we apply encoding without using ColumnTransformer, we need to encode each categorical column separately. This process returns NumPy arrays, which then need to be merged back with the original DataFrame manually.
+
+With the help of ColumnTransformer, all transformations can be applied in a single step, without the need to manually merge the transformed data back into the DataFrame.
