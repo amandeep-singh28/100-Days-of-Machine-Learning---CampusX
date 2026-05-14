@@ -1059,3 +1059,9 @@ Suppose you are performing tasks such as:
 
 Without a Pipeline, you need to perform these steps manually again and again.
 By using a Pipeline, all these tasks can be combined into a single workflow and executed with just one piece of code.
+
+->Disadvantages of Not Using Pipeline
+(i)You have to repeat all the preprocessing steps during production that were performed during training.
+(ii)If any change is made in the training code, the same change must also be manually updated in the production code.
+(iii)There is a higher chance of errors because preprocessing steps may not remain consistent between training and production.
+(iv)The code becomes lengthy, less organized, and harder to maintain.
