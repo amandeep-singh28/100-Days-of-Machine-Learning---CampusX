@@ -1065,3 +1065,25 @@ By using a Pipeline, all these tasks can be combined into a single workflow and 
 (ii)If any change is made in the training code, the same change must also be manually updated in the production code.
 (iii)There is a higher chance of errors because preprocessing steps may not remain consistent between training and production.
 (iv)The code becomes lengthy, less organized, and harder to maintain.
+
+
+
+****Function Transformer****
+FunctionTransformer in scikit-learn is used to apply custom transformations on data inside machine learning pipelines.
+It converts a normal Python function into a sklearn-compatible transformer.
+
+It is mainly used when:
+- data is skewed or not normally distributed
+- we want to apply transformations like log, square root, etc.
+- custom preprocessing is required
+
+Benefits:
+- keeps preprocessing inside pipeline
+- avoids repeated manual work
+- maintains consistency between training and testing data
+
+->Types of Function transformer
+(i)log transformer
+(ii)reciprocal transformer
+(iii)sq/ sqrt transformer
+(iv)custom transformer
