@@ -1032,3 +1032,14 @@ Why ColumnTransformer??
 If we apply encoding without using ColumnTransformer, we need to encode each categorical column separately. This process returns NumPy arrays, which then need to be merged back with the original DataFrame manually.
 
 With the help of ColumnTransformer, all transformations can be applied in a single step, without the need to manually merge the transformed data back into the DataFrame.
+
+->Syntax
+(i)We pass every encoder in a tuple
+(ii)First argument is "transformer_name", second argument is "type of encoder", and third argument is "column name on which you are applying"
+
+from sklearn.compose import ColumnTransformer
+transformer = ColumnTransformer(transformers = [
+    ('tnf1', SimpleImputer(), ['fever']),
+    ('tnf2', OrdinalEncoder(categories = [['Mild', 'Strong']]), ['cough']),
+    ('tnf3', OneHotEncoder(sparse_output = False, drop = 'first'), ['gender', 'city'])
+], remainder = 'passthrough')
