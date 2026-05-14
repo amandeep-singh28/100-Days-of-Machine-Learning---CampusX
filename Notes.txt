@@ -1043,3 +1043,19 @@ transformer = ColumnTransformer(transformers = [
     ('tnf2', OrdinalEncoder(categories = [['Mild', 'Strong']]), ['cough']),
     ('tnf3', OneHotEncoder(sparse_output = False, drop = 'first'), ['gender', 'city'])
 ], remainder = 'passthrough')
+
+
+****Machine Learning Pipeline*****
+Pipelines chains together multiple steps so that the output of each step is used as input to the next step.
+
+Pipeline makes it easy to apply the same preprocessing to train and test.
+For Example:
+Suppose you are performing tasks such as:
+
+-Filling missing values
+-Encoding categorical data
+-Scaling data
+-Training the model
+
+Without a Pipeline, you need to perform these steps manually again and again.
+By using a Pipeline, all these tasks can be combined into a single workflow and executed with just one piece of code.
