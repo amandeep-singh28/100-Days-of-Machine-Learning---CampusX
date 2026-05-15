@@ -1106,3 +1106,14 @@ When data is Left skewed, it gives best result
 
 ->Square root Transform (sqrt(x))
 Just the square root of the values
+
+->Important Points
+(i)For building QQ plot library is
+import scipy.stats as stats
+
+(ii)Why we prefer log1p() over logp()??
+To avoid the exception of log0 which is undefined. Data can contain zero too that's why.
+
+np.log1p() -> It just add one to your current data
+
+(iii)After applying function transformer, make sure to match your accuracy with the help of cross validation Score.
