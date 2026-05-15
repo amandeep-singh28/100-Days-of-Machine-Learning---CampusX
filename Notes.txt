@@ -1087,3 +1087,22 @@ Benefits:
 (ii)reciprocal transformer
 (iii)sq/ sqrt transformer
 (iv)custom transformer
+
+->How to find if data is normal or not??
+(i)Plot displot using seaborn
+(ii)Use the pandas .skew(), if it returns 0 than our data is normally distributed
+(iii)QQ plot
+If the line is 45 degree tilted along the straight line, than it is normally distributed
+
+->Log Transform
+Just take the log of the values.
+When the data is right skewed, it gives best result.
+
+->Reciprocal Transform (1/x)
+Larger values become smaller and vice versa
+
+->Square Transform (x^2)
+When data is Left skewed, it gives best result
+
+->Square root Transform (sqrt(x))
+Just the square root of the values
