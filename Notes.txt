@@ -1117,3 +1117,32 @@ To avoid the exception of log0 which is undefined. Data can contain zero too tha
 np.log1p() -> It just add one to your current data
 
 (iii)After applying function transformer, make sure to match your accuracy with the help of cross validation Score.
+
+
+****Power Transformer****
+A Power Transformer is specially designed to make data more Gaussian (normally distributed) and stabilize variance.
+
+->How Power transformer is different from Function Transformer??
+
+Both can be used for transforming data, and sometimes both may help reduce skewness or improve distribution.
+
+But the key difference is:
+
+- Power Transformer → automatically chooses a suitable power-based transformation to make data closer to normal distribution.
+- Function Transformer → you manually provide the function yourself.
+
+There are two types of Power transformer:-
+(i) Box Cox Transform
+Check formula from below link:-
+https://share.google/oMMZCTeopoJ1nzzpM
+
+The exponent here is a variable called lambda that varies over the range of -5 to 5, and in the process of searching, we examine all values of lambda. Finally, we choose the optimal value (resulting in the best apporximation to a normal distribution) for your variable.
+
+But there is 1 restriction in Box Cox Transform:-
+Only Positive values are allowed not even zero (xi > 0)
+
+(ii)Yeo - Johnson Transform (It fulfills the restriction that was in Box Cox Transform)
+Check formula from below link:-
+https://share.google/MGKKTIsenHoDIAUrv
+
+This transformation is somewhat an adjustment to the Box-Cox transformation, by which we can apply it to negative numbers
