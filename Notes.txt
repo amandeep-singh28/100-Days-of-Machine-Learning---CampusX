@@ -1213,3 +1213,11 @@ Benefits:-
 ->KMeans Binning
 We make use of clustering algorithm (kMeans)
 It is used when our data is found in clusters (Plot scatter plot)
+
+
+Syntax:-
+from sklearn.preprocessing import KBinsDiscretizer 
+(i)bins
+(ii)strategy:- uniform, quantile and Kmeans
+(iii)ecoding:- ordinal and Onehotencoding
+
