@@ -1221,3 +1221,18 @@ from sklearn.preprocessing import KBinsDiscretizer
 (ii)strategy:- uniform, quantile and Kmeans
 (iii)ecoding:- ordinal and Onehotencoding
 
+->Custom/ Domain based Binning
+[0- 18] -> kids
+[18 - 60] -> Adult
+[60 - 80] -> old
+We cannot do this with the help of sklearn, we have to implement our own logic through pandas only.
+
+->Binarization
+Instead of creating the continous intervals we create discrete intervals like 0 and 1.
+For example:-
+There is an 'Annual income' column, with the help of this column you can create a 'Tax related' column:-
+Income under 6L < 0
+else 1
+
+It is useful in Image Processing
+
