@@ -1169,3 +1169,47 @@ Why use Discretization??
 For example:-
 There is an "Age" column having values 23, 42, 57, 81 --, 100.
 What we can do is, we can create bins for this like 0-10, 10-20, 20-30, etc.
+
+->Types of Discretization:-
+(i)Unsupervised 
+- Equal Width (Uniform)
+- Equal frequency (Quantile)
+- Kmeans Binning
+(ii)Supervised
+- Decision tree binning
+(iii)Custom Binning
+
+->Equal Width / Uniform Binning
+We have to decide the bins width using this formula:-
+(max - min) / bins
+For example:-
+Suppose we want to create 4 bins
+[10, 20, 30, 40, 50, 60, 70, 80]
+bin width = (80 - 20) / 4 = 17.5
+
+Bin 1 → 10 – 27.5
+Bin 2 → 27.5 – 45
+Bin 3 → 45 – 62.5
+Bin 4 → 62.5 – 80
+
+Assign the values in the bins
+
+Benefits:-
+(i)Handle outliers
+(ii)But no change in spreadness of the data
+
+->Equal frequency / Quantile Binning
+We do the binning on the basis of quantile. For example:-
+Intervals = 10
+Each interval contains 10% of total observation.
+Intervals:
+0-16, 16-20, 20-22, 22-25 -----
+10%     20%   30%    40% {From 0}
+
+Benefits:-
+(i)Handles outliers
+(ii)Spreadness of the data
+
+->KMeans Binning
+We make use of clustering algorithm (kMeans)
+It is used when our data is found in clusters (Plot scatter plot)
