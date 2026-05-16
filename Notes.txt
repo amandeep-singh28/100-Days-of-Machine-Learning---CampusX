@@ -1236,3 +1236,18 @@ else 1
 
 It is useful in Image Processing
 
+****Handling Mixed Variables****
+(i)Single column -> B5, C23, D41
+Information is hidden in two things B(Class) and 5(Seat Number):- Categorical + Numerical
+Split it into two columns
+
+(ii)Single column -> 7, 3, 1, A, C, 4
+Split it into columns like this:
+Numerical | Categorical
+7             NA
+3             NA
+1             NA
+NA            A
+NA            C
+4             NA
+
