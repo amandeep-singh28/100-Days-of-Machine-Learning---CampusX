@@ -1146,3 +1146,26 @@ Check formula from below link:-
 https://share.google/MGKKTIsenHoDIAUrv
 
 This transformation is somewhat an adjustment to the Box-Cox transformation, by which we can apply it to negative numbers
+
+
+Can scaling + function transformer / power transformer imporove the result because at the end in the transformer part also we are basically doing the scaling part??
+Yes it can improve
+
+
+****Bining and Binarization****
+For example there is a column "Number of downloads" in which it has these type of values 23, 1010023, 9927, 88567. Basically this type of data will be "Right Skewed". What we can do to improve the performance is, we can encode our "Number of downloads column" into bins.
+
+So there are two types of techniques:-
+(i)Discretization (Binning)
+(ii)Binarization
+
+->Discretization
+It is the process of transforming continous variables into discrete variables by creating a set of contiguous intervals that span the range of the variable's values. Discretization is also called as binning where bin is an alternative name for interval.
+
+Why use Discretization??
+(i)To handle outliers
+(ii)To improve the value spread.
+
+For example:-
+There is an "Age" column having values 23, 42, 57, 81 --, 100.
+What we can do is, we can create bins for this like 0-10, 10-20, 20-30, etc.
