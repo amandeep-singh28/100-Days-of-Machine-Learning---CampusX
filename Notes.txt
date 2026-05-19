@@ -1251,3 +1251,12 @@ NA            A
 NA            C
 4             NA
 
+****Handling Date and Time Variables****
+(i)Date (Day, Month, Year, Day of week, weekend, quarter, semester)
+Date can be very important in analyzing a dataset. For example:-
+If we are working on a 'shopping' dataset, we can find hidden information like On weekends is there increase in sale or not?
+These small small things matters a lot
+
+(ii)Time
+Hour, Min & Second Information
+
