@@ -1260,3 +1260,43 @@ These small small things matters a lot
 (ii)Time
 Hour, Min & Second Information
 
+-> Working
+(i)Converting the datatype of the "date" column from "object" -> "date"
+Whenever we load a "date" type of dataset in which "date" column is there. The default datatype for the "date" column is "object", so we cannot perform the "date operations".
+
+Syntax:-
+date['date'] = pd.to_datetime(date['date'])
+
+-> Functions for DATE
+(i)Extracting Year (.dt -> telling pandas that this column contains date values)
+- date['date'].dt.year
+
+(ii)Extracting Month
+- date['date'].dt.month
+
+(iii)Extracting Month name
+- date['date'].dt.month_name()
+
+(iv)Extracting Day
+- date['date'].dt.day
+
+(v)Extracting Day of week
+- date['date'].dt.dayofweek
+
+(vi)Extracting Day of week name
+- date['date'].dt.day_name()
+
+(vii)Extracting Week of the year
+- date['date'].dt.isocalendar().week
+
+(viii)Extracting Quarter
+- date['date'].dt.quarter
+
+(ix)Extract Time elasped betwen dates
+import datetime
+today = datetime.datetime.today()
+today - date['date']
+
+- If you want only days:
+(today - date['date']).dt.days
+
