@@ -1341,3 +1341,9 @@ Remove all rows that contain missing values and use only complete rows for analy
 (ii)Data is MCAR (Missing Completely At Random)
 It means that value are missing in a random fashion, it must not be like the starting 25 values are missing or bottom 50 values are missing
 (iii)Dataset is large
+
+- Points from NB(working-with-missing-data(CCA))
+(i)If the ratio of the values are less, you must use CCA because the values are missing at random
+(ii)For proving the first point(Do these steps):
+- Create a new dataframe in which you have dropped the missing values of the columns on which CCA was applicable
+- Draw histogram and compare the results before and after(You will see that they are overlapping each other which means that there is no change in the data after removing those missing values through CCA)
