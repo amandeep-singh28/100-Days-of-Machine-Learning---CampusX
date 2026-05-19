@@ -1300,3 +1300,11 @@ today - date['date']
 - If you want only days:
 (today - date['date']).dt.days
 
+-> Functions for Time
+(i)Extracting Hour, Minute & Second
+time['date'].dt.hour
+time['date'].dt.minute
+time['date'].dt.second
+
+(ii)Extracting Time part
+time['time'] = time['date'].dt.time
