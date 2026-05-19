@@ -1308,3 +1308,27 @@ time['date'].dt.second
 
 (ii)Extracting Time part
 time['time'] = time['date'].dt.time
+
+
+****Handling Missing Data****
+There are two types of techniques through which we can handle our missing data:-
+(i)Remove them
+Remove the entire row but generally this method is not prefer because loss of information (other column values are also getting removed)
+
+(ii)Impute
+- Univariate (Through SimpleImputer Class)
+(a)Numerical Data
+- Mean/ Median
+- Random value
+- End of distribution value
+
+(b)Categorical Data
+- Mode (Most frequent Value)
+- Fill the missing values with "Missing"
+
+- Multivariate
+(a)KNN Imputer
+We fill missing values with the help of ML algorithm (KNN)
+
+(b)Iterative Imputer
+It works on algorithm which is "MICE"
