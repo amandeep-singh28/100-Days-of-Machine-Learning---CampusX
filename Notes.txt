@@ -1332,3 +1332,12 @@ We fill missing values with the help of ML algorithm (KNN)
 
 (b)Iterative Imputer
 It works on algorithm which is "MICE"
+
+-> Complete Case Analysis (CCA) {Rows drop krdo jha missing values present hai => df.dropna()}
+Remove all rows that contain missing values and use only complete rows for analysis.
+
+- Rules to apply CCA (Important)
+(i)Missing values are very small
+(ii)Data is MCAR (Missing Completely At Random)
+It means that value are missing in a random fashion, it must not be like the starting 25 values are missing or bottom 50 values are missing
+(iii)Dataset is large
