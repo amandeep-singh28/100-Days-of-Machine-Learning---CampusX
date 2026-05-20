@@ -1364,3 +1364,9 @@ Data is skewed -> Use Median
 (i)But it changes our shape of the distribution
 (ii)New outliers discovered
 (iii)Covariance & correlation changes
+
+-> When to use Arbitrary value
+When data is not missing at random
+
+-> Important Points
+(i)After filling missing values using mean or median imputation, compare the variance before and after imputation. If the variance changes significantly, it may indicate that the imputation has distorted the original data distribution, which is a red flag.
