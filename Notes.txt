@@ -1355,3 +1355,12 @@ It means that when you are filling the missing values, with the help of 1 single
 - Multivariate imputation
 It means that when you are filling missing values with the help of two or more columns using KNN, Iterative imputing etc
 
+-> When to use Mean/ Median
+When data is missing at random and missing values are less than 5%
+Data is normal -> Use Mean
+Data is skewed -> Use Median
+
+- Disadvantages:-
+(i)But it changes our shape of the distribution
+(ii)New outliers discovered
+(iii)Covariance & correlation changes
