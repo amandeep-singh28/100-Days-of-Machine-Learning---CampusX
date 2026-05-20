@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Data Science and ML Placement Roadmap</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #162033;
+      line-height: 1.48;
+      font-size: 12.5px;
+      margin: 0;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0 0 6px;
+      color: #102a43;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 24px 0 8px;
+      color: #173f5f;
+      border-bottom: 1px solid #d8e2ec;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin: 16px 0 6px;
+      color: #0f4c81;
+    }
+
+    p {
+      margin: 7px 0;
+    }
+
+    ul, ol {
+      margin: 6px 0 10px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #52616b;
+      margin-bottom: 18px;
+    }
+
+    .box {
+      border: 1px solid #d8e2ec;
+      background: #f8fbfd;
+      padding: 12px 14px;
+      border-radius: 6px;
+      margin: 12px 0;
+    }
+
+    .priority {
+      border-left: 4px solid #1f7a8c;
+      background: #f5fbfc;
+      padding: 10px 12px;
+      margin: 12px 0;
+    }
+
+    .warning {
+      border-left: 4px solid #c2410c;
+      background: #fff7ed;
+      padding: 10px 12px;
+      margin: 12px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px;
+      page-break-inside: avoid;
+    }
+
+    th, td {
+      border: 1px solid #d8e2ec;
+      padding: 7px 8px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eaf4f4;
+      color: #102a43;
+      text-align: left;
+    }
+
+    code {
+      font-family: Consolas, Monaco, monospace;
+      font-size: 11.5px;
+      background: #eef2f7;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+  <h1>Data Science and ML Placement Roadmap</h1>
+  <p class="subtitle">A focused plan for Amandeep Singh based on current GitHub projects and the ML, NLP, Data Science, Data Engineering, and RAG/LLM job descriptions.</p>
+
+  <div class="box">
+    <p><strong>Main goal:</strong> Become placement-ready for fresher roles such as Data Scientist Intern, ML Engineer Intern, Applied AI Intern, Data Analyst with ML, and junior AI/ML developer.</p>
+    <p><strong>Core strategy:</strong> Do not restart machine learning from zero. Use your existing ML foundation, then add the missing layer: NLP, LLM/RAG, deployment, SQL, and interview explanation.</p>
+  </div>
+
+  <h2>1. What The Companies Are Really Asking</h2>
+  <p>The screenshots show different types of roles. They use similar words like ML, AI, RAG, Python, APIs, and data, but they are not the same job.</p>
+
+  <table>
+    <tr>
+      <th>Role Type</th>
+      <th>What They Expect</th>
+      <th>Your Fit</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Machine Learning Engineer Fresher</td>
+      <td>Python, preprocessing, feature engineering, regression, classification, clustering, evaluation, overfitting, API deployment.</td>
+      <td>Strong base because of your Bank Churn and ML projects.</td>
+      <td>Revise deeply and deploy one project.</td>
+    </tr>
+    <tr>
+      <td>Data Scientist / Applied AI Intern</td>
+      <td>ML, NLP, text processing, LLM APIs, Streamlit demos, SQL, model evaluation, business interpretation.</td>
+      <td>Best target for you.</td>
+      <td>Add NLP and RAG projects.</td>
+    </tr>
+    <tr>
+      <td>Data Engineer Intern</td>
+      <td>SQL, ETL, data pipelines, databases, data quality, cloud basics.</td>
+      <td>Possible, but this is less ML-focused.</td>
+      <td>Keep as backup. Strengthen SQL and ETL basics.</td>
+    </tr>
+    <tr>
+      <td>AI/ML Architect, RAG, Multi-Agent</td>
+      <td>RAG, vector databases, LangChain, agents, cloud, FastAPI, memory, orchestration.</td>
+      <td>Advanced for a fresher, but project exposure can help.</td>
+      <td>Build one practical RAG project. Do not try to master everything.</td>
+    </tr>
+  </table>
+
+  <div class="priority">
+    <p><strong>Your best target:</strong> Data Scientist Intern / ML Engineer Intern / Applied AI Intern.</p>
+    <p><strong>Your positioning line:</strong> "I can clean and analyze data, build classical ML models, explain metrics, work with SQL, and create deployed AI/ML demos using NLP and RAG."</p>
+  </div>
+
+  <h2>2. Your Skill Blocks</h2>
+  <p>You should organize your preparation into six blocks. These are ordered by placement value.</p>
+
+  <h3>Block A: Python for Data Science</h3>
+  <p>You do not need advanced Python theory. You need practical coding confidence.</p>
+  <ul>
+    <li>Data structures: list, tuple, set, dict.</li>
+    <li>Functions, lambda, map, filter, list comprehension.</li>
+    <li>File handling: CSV, JSON, text files.</li>
+    <li>Error handling: <code>try</code>, <code>except</code>, basic debugging.</li>
+    <li>OOP basics: class, object, constructor, methods.</li>
+    <li>Libraries: NumPy, pandas, matplotlib, seaborn, scikit-learn.</li>
+  </ul>
+
+  <p><strong>Placement depth:</strong> You should be able to solve basic Python questions and explain your project code without hesitation.</p>
+
+  <h3>Block B: SQL and Databases</h3>
+  <p>SQL gives very high return for both data science and data engineering roles.</p>
+  <ul>
+    <li>Basic queries: <code>SELECT</code>, <code>WHERE</code>, <code>ORDER BY</code>, <code>LIMIT</code>.</li>
+    <li>Aggregations: <code>COUNT</code>, <code>SUM</code>, <code>AVG</code>, <code>GROUP BY</code>, <code>HAVING</code>.</li>
+    <li>Joins: inner, left, right, full outer concept.</li>
+    <li>Subqueries and correlated subqueries.</li>
+    <li>CTEs using <code>WITH</code>.</li>
+    <li>Window functions: <code>ROW_NUMBER</code>, <code>RANK</code>, <code>DENSE_RANK</code>, <code>LAG</code>, <code>LEAD</code>.</li>
+    <li>Case statements and conditional aggregation.</li>
+    <li>Basic database design: primary key, foreign key, normalization, star schema.</li>
+  </ul>
+
+  <p><strong>Project use:</strong> Add 20 to 30 business SQL questions to one dashboard project. Example: monthly revenue, top customers, churn by segment, top genres, repeat customers.</p>
+
+  <h3>Block C: Classical Machine Learning</h3>
+  <p>You already know ML, so revise for interview depth rather than watching a full course again.</p>
+  <ul>
+    <li>Supervised learning: regression and classification.</li>
+    <li>Regression models: Linear Regression, Ridge, Lasso, ElasticNet.</li>
+    <li>Classification models: Logistic Regression, KNN, Naive Bayes, SVM basics.</li>
+    <li>Tree models: Decision Tree, Random Forest, Gradient Boosting, XGBoost.</li>
+    <li>Unsupervised learning: KMeans, hierarchical clustering, DBSCAN basics, PCA basics.</li>
+    <li>Feature engineering: scaling, encoding, missing value handling, outliers, datetime features.</li>
+    <li>Model evaluation: accuracy, precision, recall, F1, ROC-AUC, PR-AUC, confusion matrix, MAE, MSE, RMSE, R2.</li>
+    <li>Model selection: train-test split, cross-validation, hyperparameter tuning.</li>
+    <li>Important concepts: bias-variance, overfitting, underfitting, regularization, data leakage, class imbalance.</li>
+  </ul>
+
+  <p><strong>Interview depth:</strong> For every algorithm, know when to use it, its weakness, and one real example from your project.</p>
+
+  <h3>Block D: NLP Fundamentals</h3>
+  <p>This is the biggest missing area in your profile based on the JDs.</p>
+  <ul>
+    <li>Text cleaning: lowercasing, punctuation removal, stopwords, stemming, lemmatization.</li>
+    <li>Tokenization: sentence and word tokenization.</li>
+    <li>Vectorization: Bag of Words, n-grams, TF-IDF.</li>
+    <li>Text classification: sentiment analysis, spam detection, topic/category prediction.</li>
+    <li>Named Entity Recognition basics: person, organization, location extraction.</li>
+    <li>Topic modeling basics: LDA concept.</li>
+    <li>Word embeddings: Word2Vec concept, sentence embeddings concept.</li>
+    <li>Evaluation: accuracy, F1, confusion matrix for text classification.</li>
+  </ul>
+
+  <p><strong>Project target:</strong> Build one complete NLP project using TF-IDF plus Logistic Regression, Naive Bayes, or XGBoost. Deploy with Streamlit.</p>
+
+  <h3>Block E: LLM, Embeddings, and RAG</h3>
+  <p>This is what many modern AI JDs are asking. You do not need to become a research engineer. You need practical understanding and one strong demo project.</p>
+  <ul>
+    <li>LLM basics: what large language models do, tokens, context window, temperature.</li>
+    <li>Prompt engineering: clear instructions, role prompts, examples, output formats.</li>
+    <li>Embeddings: converting text into vectors for similarity search.</li>
+    <li>Vector search: cosine similarity, nearest neighbor search.</li>
+    <li>Vector databases: FAISS, Chroma, Qdrant, or pgvector basics.</li>
+    <li>RAG pipeline: load documents, split text, create embeddings, store vectors, retrieve relevant chunks, generate answer.</li>
+    <li>LangChain or LlamaIndex basics: document loaders, text splitters, retrievers, chains.</li>
+    <li>RAG evaluation basics: relevance, hallucination, answer faithfulness, source citation.</li>
+    <li>Agent basics: tool calling, ReAct idea, simple workflow automation. Keep this basic.</li>
+  </ul>
+
+  <p><strong>Project target:</strong> Build a Resume and Job Description Matcher or Chat With PDF app using RAG. This directly matches your placement JDs.</p>
+
+  <h3>Block F: Deployment and Engineering</h3>
+  <p>This separates job-ready candidates from notebook-only candidates.</p>
+  <ul>
+    <li>Streamlit: quick ML/NLP demo apps.</li>
+    <li>FastAPI: create prediction API endpoints.</li>
+    <li>Model saving: <code>joblib</code>, <code>pickle</code>.</li>
+    <li>Project structure: <code>src/</code>, <code>app.py</code>, <code>requirements.txt</code>, <code>README.md</code>.</li>
+    <li>Git and GitHub: clean commits, proper repo descriptions, pinned projects.</li>
+    <li>Basic cloud idea: what AWS/GCP/Azure are, EC2, S3, Cloud Run basics. Do not go deep now.</li>
+    <li>Optional Docker basics: what a container is, <code>Dockerfile</code> idea.</li>
+  </ul>
+
+  <h2 class="page-break">3. What To Build</h2>
+  <p>You do not need many more projects. You need the right projects.</p>
+
+  <h3>Project 1: Upgrade Bank Customer Churn</h3>
+  <p><strong>Purpose:</strong> Prove classical ML strength.</p>
+  <ul>
+    <li>Keep your existing model comparison and XGBoost result.</li>
+    <li>Add a Streamlit app: user enters customer details and receives churn probability.</li>
+    <li>Add SHAP or feature importance for interpretability.</li>
+    <li>Add a simple FastAPI endpoint: <code>/predict</code>.</li>
+    <li>Add a clean README with problem, dataset, workflow, metrics, screenshots, and how to run.</li>
+  </ul>
+
+  <p><strong>Interview story:</strong> "I handled class imbalance, compared multiple models, selected XGBoost using ROC-AUC and PR-AUC, and deployed it as a usable churn prediction app."</p>
+
+  <h3>Project 2: NLP Text Classification</h3>
+  <p><strong>Purpose:</strong> Cover NLP fundamentals from JDs.</p>
+  <ul>
+    <li>Choose one dataset: movie reviews, product reviews, tweets, spam messages, or support tickets.</li>
+    <li>Clean text and create TF-IDF features.</li>
+    <li>Train Logistic Regression, Naive Bayes, Random Forest, and XGBoost if useful.</li>
+    <li>Evaluate with confusion matrix, precision, recall, and F1.</li>
+    <li>Deploy with Streamlit.</li>
+  </ul>
+
+  <p><strong>Suggested title:</strong> Customer Review Sentiment Analyzer.</p>
+  <p><strong>Interview story:</strong> "I converted raw text into numerical features using TF-IDF, trained classification models, compared F1 scores, and deployed a sentiment prediction demo."</p>
+
+  <h3>Project 3: RAG-Based Resume and JD Matcher</h3>
+  <p><strong>Purpose:</strong> Match modern AI, RAG, embeddings, LangChain, vector DB, and LLM keywords.</p>
+  <ul>
+    <li>User uploads resume and job description.</li>
+    <li>App extracts text from PDF or text input.</li>
+    <li>Create embeddings for resume sections and JD requirements.</li>
+    <li>Use vector similarity to match skills and missing areas.</li>
+    <li>Use an LLM to generate a structured report: match score, strong areas, missing skills, project suggestions, interview focus.</li>
+    <li>Add source-based reasoning or show matched text snippets.</li>
+  </ul>
+
+  <p><strong>Suggested stack:</strong> Python, Streamlit, LangChain or LlamaIndex, FAISS or Chroma, OpenAI or Hugging Face embeddings, optional FastAPI.</p>
+  <p><strong>Interview story:</strong> "I built a RAG app that retrieves relevant resume and JD sections using embeddings and generates a grounded skill-gap report."</p>
+
+  <h2>4. 90-Day Placement Plan</h2>
+
+  <table>
+    <tr>
+      <th>Days</th>
+      <th>Focus</th>
+      <th>Output</th>
+    </tr>
+    <tr>
+      <td>1-10</td>
+      <td>ML revision, metrics, leakage, imbalance, interview questions from your Bank Churn project.</td>
+      <td>ML interview notes plus improved Bank Churn README.</td>
+    </tr>
+    <tr>
+      <td>11-20</td>
+      <td>SQL practice: joins, CTEs, window functions, business queries.</td>
+      <td>SQL practice repo or SQL section added to dashboard project.</td>
+    </tr>
+    <tr>
+      <td>21-35</td>
+      <td>NLP fundamentals and text classification project.</td>
+      <td>Deployed NLP Streamlit app.</td>
+    </tr>
+    <tr>
+      <td>36-55</td>
+      <td>LLM, embeddings, vector DB, RAG, LangChain basics.</td>
+      <td>RAG Resume and JD Matcher MVP.</td>
+    </tr>
+    <tr>
+      <td>56-65</td>
+      <td>Deployment: Streamlit, FastAPI, requirements, project structure.</td>
+      <td>Bank Churn app/API and RAG app cleaned.</td>
+    </tr>
+    <tr>
+      <td>66-75</td>
+      <td>Resume, GitHub profile, pinned repos, LinkedIn, project descriptions.</td>
+      <td>Placement-ready public profile.</td>
+    </tr>
+    <tr>
+      <td>76-90</td>
+      <td>Mock interviews, SQL, DSA, ML questions, project explanation practice.</td>
+      <td>Interview readiness and application routine.</td>
+    </tr>
+  </table>
+
+  <h2>5. Daily Routine</h2>
+  <p>Use this routine during active preparation. Keep it realistic and repeatable.</p>
+  <ul>
+    <li><strong>45 minutes:</strong> SQL practice.</li>
+    <li><strong>45 minutes:</strong> DSA or Python coding.</li>
+    <li><strong>90 to 120 minutes:</strong> project building.</li>
+    <li><strong>30 minutes:</strong> ML/NLP/LLM theory revision.</li>
+    <li><strong>15 minutes:</strong> write notes or update GitHub README.</li>
+  </ul>
+
+  <p>If college work is heavy, reduce project time but do not skip SQL and coding completely.</p>
+
+  <h2>6. Interview Topics You Must Prepare</h2>
+
+  <h3>ML Questions</h3>
+  <ul>
+    <li>What is overfitting and how do you reduce it?</li>
+    <li>What is data leakage? Give an example.</li>
+    <li>Precision vs recall vs F1.</li>
+    <li>Why is PR-AUC useful for imbalanced data?</li>
+    <li>Why did you choose XGBoost in churn prediction?</li>
+    <li>How does Random Forest reduce overfitting?</li>
+    <li>Difference between bagging and boosting.</li>
+    <li>How do you handle missing values?</li>
+    <li>Why should preprocessing be inside a pipeline?</li>
+    <li>How do you handle class imbalance?</li>
+  </ul>
+
+  <h3>NLP Questions</h3>
+  <ul>
+    <li>What is tokenization?</li>
+    <li>What is TF-IDF?</li>
+    <li>Bag of Words vs TF-IDF.</li>
+    <li>Stemming vs lemmatization.</li>
+    <li>How do you build a sentiment classifier?</li>
+    <li>Why can text data be sparse?</li>
+    <li>What are embeddings?</li>
+  </ul>
+
+  <h3>LLM and RAG Questions</h3>
+  <ul>
+    <li>What is an embedding?</li>
+    <li>What is vector search?</li>
+    <li>What is RAG?</li>
+    <li>Why use RAG instead of only prompting an LLM?</li>
+    <li>What is chunking?</li>
+    <li>How do you reduce hallucination?</li>
+    <li>What is LangChain used for?</li>
+    <li>What is the difference between fine-tuning and RAG?</li>
+  </ul>
+
+  <h3>SQL Questions</h3>
+  <ul>
+    <li>Second highest salary.</li>
+    <li>Top 3 products by revenue per category.</li>
+    <li>Customers who purchased in one month but not the next.</li>
+    <li>Monthly revenue growth.</li>
+    <li>Rank employees/customers/products using window functions.</li>
+    <li>Difference between WHERE and HAVING.</li>
+    <li>Inner join vs left join.</li>
+  </ul>
+
+  <h2>7. GitHub and Resume Positioning</h2>
+  <p>Your GitHub already has good raw material. Now make it easier for recruiters to understand.</p>
+  <ul>
+    <li>Pin only your strongest 4 to 6 projects.</li>
+    <li>Keep certificates lower priority than projects.</li>
+    <li>Every flagship repo should have a clear description.</li>
+    <li>Every flagship README should include problem statement, tech stack, workflow, results, screenshots, and how to run.</li>
+    <li>Add live demo links wherever possible.</li>
+    <li>Use metrics in project bullets, not generic lines.</li>
+  </ul>
+
+  <h3>Resume Project Bullets</h3>
+  <ul>
+    <li>Built a bank churn prediction pipeline using XGBoost, handling class imbalance and achieving ROC-AUC 0.88 and PR-AUC 0.71.</li>
+    <li>Developed an NLP sentiment classification app using TF-IDF and ML models, deployed with Streamlit for real-time predictions.</li>
+    <li>Built a RAG-based resume and JD matcher using embeddings and vector search to identify skill gaps and generate structured recommendations.</li>
+    <li>Designed SQL-driven dashboards using MySQL and Power BI to analyze business KPIs and trends.</li>
+  </ul>
+
+  <h2>8. What Not To Study Right Now</h2>
+  <div class="warning">
+    <p>These topics appear in some JDs, but they are not the best use of time for fresher placement unless a specific company requires them.</p>
+  </div>
+  <ul>
+    <li>Deep learning from scratch in heavy detail.</li>
+    <li>Advanced robotics and embedded systems.</li>
+    <li>CUDA, Rust, C++ performance optimization.</li>
+    <li>Advanced cloud architecture.</li>
+    <li>Fine-tuning Llama/Mistral deeply.</li>
+    <li>Too many new certificates.</li>
+    <li>Another full beginner ML course.</li>
+  </ul>
+
+  <h2>9. Final Roadmap Summary</h2>
+  <div class="priority">
+    <p><strong>Phase 1:</strong> Revise classical ML deeply using your own Bank Churn project.</p>
+    <p><strong>Phase 2:</strong> Strengthen SQL and basic DSA for placement filters.</p>
+    <p><strong>Phase 3:</strong> Learn NLP basics and build one text classification app.</p>
+    <p><strong>Phase 4:</strong> Learn LLM embeddings and RAG, then build one RAG project.</p>
+    <p><strong>Phase 5:</strong> Deploy projects, polish GitHub, rewrite resume, and practice interviews.</p>
+  </div>
+
+  <p><strong>Simple rule:</strong> If a topic does not improve your projects, resume, or interview performance in the next 90 days, keep it for later.</p>
+</body>
+</html>
