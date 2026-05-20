@@ -1347,3 +1347,11 @@ It means that value are missing in a random fashion, it must not be like the sta
 (ii)For proving the first point(Do these steps):
 - Create a new dataframe in which you have dropped the missing values of the columns on which CCA was applicable
 - Draw histogram and compare the results before and after(You will see that they are overlapping each other which means that there is no change in the data after removing those missing values through CCA)
+
+****Handling Missing Data****
+- Univariate imputation
+It means that when you are filling the missing values, with the help of 1 single column like through mean, median, mode etc
+
+- Multivariate imputation
+It means that when you are filling missing values with the help of two or more columns using KNN, Iterative imputing etc
+
