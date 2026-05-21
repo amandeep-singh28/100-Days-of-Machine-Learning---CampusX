@@ -1436,3 +1436,33 @@ Benefits:
 (i) Consistent predictions during deployment
 (ii) Reproducible imputation
 (iii) Stable model behavior
+
+
+****Missing Indicator****
+In this technique, we create a new binary column to indicate whether the original value was missing or not.
+
+- Missing value  -> True (or 1)
+- Non-missing value -> False (or 0)
+
+Example:
+Suppose "Age" column contains missing values.
+
+Original:
+Age
+22
+NaN
+35
+
+After Missing Indicator:
+Age    Age_NA
+22      0
+NaN     1
+35      0
+
+Benefits:
+(i) Helps ML algorithms identify patterns related to missing values
+(ii) Sometimes missing values themselves contain useful information
+(iii) Can improve model performance such as Accuracy or R² score
+
+Important:
+Missing Indicator is generally used along with another imputation technique like Mean/Median or Random Imputation.
