@@ -1466,3 +1466,12 @@ Benefits:
 
 Important:
 Missing Indicator is generally used along with another imputation technique like Mean/Median or Random Imputation.
+
+We can perform this in two ways:-
+(i)Using Missing Indicator class
+mi = MissingIndicator()
+mi.fit(X_train)
+
+(ii)Using SimpleImputer
+si = SimpleImputer(add_indicator=True)
+
