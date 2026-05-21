@@ -1370,3 +1370,38 @@ When data is not missing at random
 
 -> Important Points
 (i)After filling missing values using mean or median imputation, compare the variance before and after imputation. If the variance changes significantly, it may indicate that the imputation has distorted the original data distribution, which is a red flag.
+
+
+****Random Imputation****
+It can be applied to both categorical and numerical column
+It will fill the missing values at Random from the existing data in the column
+Cannot perform through sklearn
+
+- Benefits
+(i)Easy to apply
+(ii)It preserves the variance of the variable
+Because you are filling the missing values randomly. For example:-
+Suppose column values are:- 10, 12 15, 18, 20 => Mean = 15
+Now imagine 20 missing values.
+If you fill all missing values with 15:
+10,12,15,18,20,15,15,15,15,15...
+Now what happened?
+Problem:
+  Too many values become exactly same.
+So:
+  ata becomes concentrated around one point
+  spread decreases
+  variance changes
+  histogram shape changes
+That is why, IT DISTORTS THE DATA.
+
+But if you are using Random Imputation, than it does not distort the data
+
+(iii)Well suited for linear models as it does not distort the distribution, regardless of the % of NA.
+
+- Disadvantage:-
+(i) Memory heavy for deployment because we need to store the original training data (or distribution of values) to randomly select values for replacing missing data in future observations.
+
+Example:
+Suppose after deployment, a new observation has a missing value in the "Age" column.
+If we are using Random Imputation, then we need the values from X_train['Age'] so that a random value can be selected and used to fill the missing value.
