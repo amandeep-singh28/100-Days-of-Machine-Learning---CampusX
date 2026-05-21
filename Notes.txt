@@ -1405,3 +1405,34 @@ But if you are using Random Imputation, than it does not distort the data
 Example:
 Suppose after deployment, a new observation has a missing value in the "Age" column.
 If we are using Random Imputation, then we need the values from X_train['Age'] so that a random value can be selected and used to fill the missing value.
+
+****Random Imputation in Deployment****
+
+Problem:
+Random Imputation may generate different values for the same input during deployment.
+
+Example:
+Suppose two users provide exactly the same input values, but the "Age" column is missing.
+If pure random sampling is used, then:
+- User 1 may get Age = 24
+- User 2 may get Age = 41
+
+This creates inconsistency in model behavior.
+
+Solution:
+Use random_state while sampling.
+
+Example:
+sampled_value = X_train['Age'].dropna().sample(
+    1,
+    random_state=int(observation['Fare'])
+)
+
+Explanation:
+Here, the random_state is generated using an existing feature value (Fare).
+So if two users have the same Fare value, the same random seed is generated and the same Age value gets imputed.
+
+Benefits:
+(i) Consistent predictions during deployment
+(ii) Reproducible imputation
+(iii) Stable model behavior
