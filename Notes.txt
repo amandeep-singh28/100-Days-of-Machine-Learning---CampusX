@@ -1475,3 +1475,35 @@ mi.fit(X_train)
 (ii)Using SimpleImputer
 si = SimpleImputer(add_indicator=True)
 
+****KNN Imputer****
+Find similar rows and use their values to fill the missing data.
+It works on nan_euclidean distance
+For example:-
+S.No Feature_1 Feature_2 Feature_3 Feature_4
+1       33        NaN       67        21
+2       NaN       45        68        12
+3       23        51        71        18
+4       40        NaN       81        NaN
+5       35        60        79        NaN
+
+dist(x,y) = sqrt(weight * sq. distance from present coordinates) where,
+  weight = (Total no of coordinates) / (# of present coordinates)
+
+You have to take only those values which are not missing. Suppose you have considered row 1 and row 2:-
+  sqrt{ (67 - 68)^2 + (21 - 12)^2}
+Now total no of coordinates = 3, no of present coordinates = 2
+  sqrt{ 3/2 (67 - 68)^2 + (21 - 12)^2}
+
+Row 2 and Row 3
+sqrt{ 3/3 (51 - 45)^2 + (68 - 71)^2 + (12 - 18)^2}
+
+Row 2 and Row 4
+sqrt{ 3/1 (81 - 68)^2}
+
+
+- Advantage
+(i)More accurate results than Mean/Median
+
+- Disadvantage
+(i)At the time of production, suppose the user has given a missing value than to solve that you need to upload your X_train data also
+
