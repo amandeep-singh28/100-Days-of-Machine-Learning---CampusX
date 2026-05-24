@@ -1714,3 +1714,21 @@ R&D Spend   Administration   Marketing Spend
 0.00          0.00              0.00
 
 As you can see, values are coming closer to zero again. Do the Iteration again
+
+
+*****Outliers****
+Values that are significantly different from our normal values are known as Outliers.
+Sometimes Outliers can be useful to us also, it is not always mandatory to remove the outliers, it can give us some meaningful information also.
+But the most difficult part is to think that "If i found outliers in my dataset, how should i work upon it?"
+
+- How to treat outliers
+(i)Trimming (remove them)
+Don't use this technique if there are many outliers in your dataset because your dataset will become small then.
+
+(ii)Capping
+(Outlier humesha end ya start m he hoga)
+So create a range, like if the marks < 0 || marks > 90, than it is a outlier
+
+(iii)Treat it as Missing values (Not widely used)
+
+(iv)Perform Discretization (Not widely used)
