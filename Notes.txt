@@ -1532,3 +1532,185 @@ We apply MICE when data is MAR (Missing at random). We can apply this technique 
 (ii)Memory
 We have to put training data on the server at the time of deployment because missing values can also come during real time
 
+- Working of Iterative Imputer/ MICE
+MICE is implemented only on the INPUT columns (Remove the target column)
+
+(i)Actual Dataset
+R&D Spend   Administration   Marketing Spend   Profit
+
+8.0          15.0              30.0          11.0
+4.0           5.0              20.0           9.0
+15.0         10.0              41.0          19.0
+12.0         16.0              26.0          13.0
+2.0          15.0               3.0           7.0
+
+(ii)Removing the target column
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+4.0           5.0              20.0
+15.0         10.0              41.0
+12.0         16.0              26.0
+2.0          15.0               3.0
+
+(iii)Introducing some fake nan values
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+NaN          5.0               20.0
+15.0         10.0              41.0
+12.0         NaN               26.0
+2.0          15.0              NaN
+
+(iv) STEP 1
+Fill all the NaN values with mean of respective columns
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+9.25         5.0              20.0
+15.0         10.0              41.0
+12.0         11.25             26.0
+2.0          15.0              29.25
+
+(v) STEP 2
+Remove all col1 missing values, because now we will predict the missing value using the any algorithm
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+NaN          5.0               20.0
+15.0         10.0              41.0
+12.0         11.25             26.0
+2.0          15.0              29.25
+
+Now basically you will predict the missing value with the help of any algorithm which you prefer.
+Now we will divide the dataset into X and y and train our model.
+- For X
+Administration   Marketing Spend
+
+15.00             30.00
+10.00             41.00
+11.25             26.00
+15.00             29.25
+
+- For y
+R & D Spend
+8.0
+15.0
+12.0
+2.0
+
+After model is fully trained, we will make the prediction.
+(Administration & Marketing Spend ki help se "R & D spend" ki predition krenge toh finally humare pass missing value ki value aaegi -> 23.14)
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         11.25             26.0
+2.0          15.0              29.25
+
+(vi) Now again the same procedure
+Remove all col2 missing values
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         NaN               26.0
+2.0          15.0              29.25
+
+- For X
+R&D Spend   Marketing Spend
+8.0             30.0
+23.14           20.0
+15.0            41.0
+2.0             29.25
+
+- For Y
+Administration
+15.0
+5.0
+10.0
+15.0
+
+After tranining and prediction, we will get NaN -> 11.06
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         11.06             26.0
+2.0          15.0              29.25
+
+
+(vii)Same procedure for the column3
+After prediction of the column3
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         11.06             26.0
+2.0          15.0              31.56
+
+(viii)STEP 3 (Subtraction)
+ITERATION 0 (When we have filled the missing values with the help of Mean)
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+9.25         5.0              20.0
+15.0         10.0              41.0
+12.0         11.25             26.0
+2.0          15.0              29.25
+
+
+ITERATION 1 (With the help of prediction)
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         11.06             26.0
+2.0          15.0              31.56
+
+Now we will Subtracte (Iteration 0 - Iteration 1)
+R&D Spend   Administration   Marketing Spend
+
+0.00          0.00              0.00
+13.89*         0.00              0.00
+0.00          0.00              0.00
+0.00         -0.19*              0.00
+0.00          0.00              2.31*
+
+We will make this iteration keep going until and unless, the "values" for "missing values" are zero or closer to zero.
+(Jitni baar iteration chlaenge, otta acha perform krega)
+
+Now we will make "ITERATION 1" as our base, and we will perform the steps again where we have divided our dataset into X and y and done the prediction for every column
+(ITERATAION 1 Dataset)
+R&D Spend   Administration   Marketing Spend
+
+8.0          15.0              30.0
+23.14        5.0               20.0
+15.0         10.0              41.0
+12.0         11.06             26.0
+2.0          15.0              31.56
+
+(Iteration 2 Dataset)
+R&D Spend   Administration   Marketing Spend
+
+8.00          15.00             30.00
+23.78         5.00              20.00
+15.00         10.00             41.00
+12.00         11.22             26.00
+2.00          15.00             31.56
+
+(Difference)
+R&D Spend   Administration   Marketing Spend
+
+0.00          0.00              0.00
+0.64          0.00              0.00
+0.00          0.00              0.00
+0.00          0.16              0.00
+0.00          0.00              0.00
+
+As you can see, values are coming closer to zero again. Do the Iteration again
