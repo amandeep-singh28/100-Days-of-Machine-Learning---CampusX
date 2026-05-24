@@ -1732,3 +1732,22 @@ So create a range, like if the marks < 0 || marks > 90, than it is a outlier
 (iii)Treat it as Missing values (Not widely used)
 
 (iv)Perform Discretization (Not widely used)
+
+- How to detect outliers
+(i)If data is normally distributed
+https://share.google/2cBS8xrsSiivOyObw
+Check from the above image.
+If the value is less than mean - 3*SD || greater than mean + 3*SD, than it can be treated as outlier
+
+(ii)Skewed Distribution
+Use IQR, plot the boxplot
+
+(iii)Other distributions
+Percentile based approach
+2.5th percentile || 97.5th percentile
+
+- Techniques for Outlier Detection and Removal
+(i)Z-Score Treatment
+(ii)IQR Based filtering
+(iii)Percentile
+(iv)Winsorization
