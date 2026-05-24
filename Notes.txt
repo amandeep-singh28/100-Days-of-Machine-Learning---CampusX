@@ -1507,3 +1507,28 @@ sqrt{ 3/1 (81 - 68)^2}
 - Disadvantage
 (i)At the time of production, suppose the user has given a missing value than to solve that you need to upload your X_train data also
 
+*****Iterative Imputator/ MICE****
+MICE stands for "Multivariate Imputation by Chained Equations"
+
+Baically there are three things:-
+(i)MCAR (Missing completely at random)
+Data is not collected properly it could be any reason
+
+(ii)MAR (Missing at random)
+People has not submitted there details for example:- Person has not filled his weight due to some reasons or maybe he don't want to tell.
+(We can fill the missing values with the help of others column values)
+
+(iii)MNAR (Missing not at random)
+Janmuchkr data hataya gaya hai.
+(So there is no such relationship between the columns)
+
+We apply MICE when data is MAR (Missing at random). We can apply this technique on anytype of missing data but it will give good results only we apply it on MAR(Missing at random)
+
+- Advantages
+(i)Gives accurate results
+
+- Disadvantages
+(i)Slow
+(ii)Memory
+We have to put training data on the server at the time of deployment because missing values can also come during real time
+
