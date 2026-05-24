@@ -1751,3 +1751,22 @@ Percentile based approach
 (ii)IQR Based filtering
 (iii)Percentile
 (iv)Winsorization
+
+
+-> Z-Score Outlier Detection & Removal
+Assumption :- Column must be Normal Distributed(or almost)
+
+Normal Curve:- Rule 
+Mean se 1 standard deviation ki doori par (Mean + 1*SD, Mean - 1*SD) => Almost 68% value will be there
+
+Mean + 2*SD, Mean - 2*SD => Almost 95% value will be there
+
+Scientist made an assumption that if a value is out of this boundary {Mean - 3*SD, Mean + 3*SD} => We can treat that value as an Outlier
+
+Z Score formula => (Xi - Mean) / SD
+
+- What to do with the outlier
+(i)Trimming
+Remove the rows
+(ii)Capping
+If value is exceeding the limit. For example:- if 90 is highest, so 95 will be an outlier so for this value its value gonna change and it will be 90.
