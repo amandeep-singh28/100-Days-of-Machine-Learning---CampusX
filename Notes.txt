@@ -1770,3 +1770,11 @@ Z Score formula => (Xi - Mean) / SD
 Remove the rows
 (ii)Capping
 If value is exceeding the limit. For example:- if 90 is highest, so 95 will be an outlier so for this value its value gonna change and it will be 90.
+
+
+-> IQR Outlier Detection & Removal
+It is applied mostly when our data is Skewed.
+
+There are two viscous in a BOX PLOT:-
+Lower viscous:- Q1 - 1.5*IQR
+Upper viscous:- Q3 - 1.5*IQR
