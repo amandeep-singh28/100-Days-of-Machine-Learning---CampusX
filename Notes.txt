@@ -1778,3 +1778,21 @@ It is applied mostly when our data is Skewed.
 There are two viscous in a BOX PLOT:-
 Lower viscous:- Q1 - 1.5*IQR
 Upper viscous:- Q3 - 1.5*IQR
+
+-> Outlier Detection using the Percentile method
+In the percentile method, we set an upper threshold and a lower threshold to identify outliers in the dataset.
+- Values below the lower percentile threshold are treated as lower outliers.
+- Values above the upper percentile threshold are treated as upper outliers.
+
+Commonly used thresholds are:
+- 1st percentile and 99th percentile
+- 5th percentile and 95th percentile
+
+Methods to Handle Outliers
+(i)Removing Outliers
+Delete the rows containing outlier values.
+(ii)Capping Outliers (Winsorization)
+Replace extreme values with the upper or lower percentile limit.
+
+Note:
+Capping of outliers using percentile limits is also called Winsorization.
