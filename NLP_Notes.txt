@@ -44,3 +44,31 @@ Used in:
 
 (iv)Spam Detection
 Classifying emails as spam or ham.
+
+-> Working of NLP
+
+Text
+ ↓
+Cleaning
+ ↓
+Tokenization
+ ↓
+Vectorization
+ ↓
+Machine Learning Model
+ ↓
+Prediction
+
+For example:
+"I Love Cricket"
+
+Firtly it will do the preprocessing, for example:- Converting the text into lowercase, removing extra spaces, etc etc.
+
+Than it will do Tokenization, sentence is broken down into smaller units called tokens(Like a STRING of words)
+["i", "love", "cricket"]
+
+Than, Vectorization, it means that converting text into numbers because ML models work upon numerical data
+[0.2, 0.7, 0.5]
+
+Than, Apply an NLP model and then Result.
+
