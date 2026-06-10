@@ -174,3 +174,45 @@ How are sentences formed?
 These are linguistic concepts.
 So:
 Linguistic = related to the knowledge and structure of a language.
+
+
+Now:-
+(i)Stemming(It is the process of reducing a word to its root form by removing prefixes or suffixes using heuristic rules without considering the actual meaning of the word)
+Idea
+Cut off prefixes/suffixes using simple rules.
+
+Example:
+playing → play
+played  → play
+plays   → play
+Sounds good, right?
+
+Now look at:
+studies → studi
+Oops 😅
+The result is not even a proper English word.
+
+Another example:
+running → run
+Good.
+
+history → histori
+Not good.
+
+(ii)Lemmatization
+Lemmatization is smarter.
+Instead of blindly cutting letters, it uses vocabulary and linguistic knowledge.
+
+Example:
+playing → play
+played  → play
+better  → good
+running → run
+studies → study
+
+Notice:
+studies → study
+which is a valid English word.
+
+Which is better: Stemming or Lemmatization?
+Lemmatization generally produces more meaningful words and is more accurate than stemming. However, stemming is computationally faster. The choice depends on the application and performance requirements.
