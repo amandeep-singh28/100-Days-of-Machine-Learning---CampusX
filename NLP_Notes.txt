@@ -1,0 +1,23 @@
+****Module 1****
+What does NLP stand for?
+Natural Language Processing
+
+It is a field of AI that helps computers understand human language.
+
+Human language examples:
+
+English
+Hindi
+Punjabi
+French
+
+Computers understand:
+
+Numbers
+Vectors
+Matrices
+
+NLP is the bridge between them.
+
+For example:-
+Suppose I have written "I LOVE PIZZA". We, as humans, can already understand what this sentence means, like what love is and what pizza is. But for a machine, it doesn't understand whether the sentence is positive or negative. It just sees the text as characters.
