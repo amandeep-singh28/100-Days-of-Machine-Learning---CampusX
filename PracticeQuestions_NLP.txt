@@ -1,0 +1,76 @@
+Practice Questions (Placement Style)
+Q1
+What is NLP?
+
+Q2
+Why is NLP required?
+
+Q3
+What are some applications of NLP?
+
+Q4
+What is a corpus?
+
+Q5
+Why can't machine learning models directly process text?
+
+Q6
+Explain a high-level NLP pipeline.
+
+------------------------------------------------------
+
+Quick Interview Practice
+Suppose the sentence is:
+"The Movie WAS Amazing!!!"
+
+Tell me:
+1. After lowercasing?
+2. After punctuation removal?
+3. After stopword removal?
+
+-------------------------------------------------------
+Practice
+
+For each word, tell me what you think the output would be after:
+
+A. Stemming
+B. Lemmatization
+playing
+studies
+running
+better
+
+---------------------------------------------------------
+Placement-Level Question
+Suppose we have:
+
+I love NLP. It is amazing.
+Without looking up anything, tell me:
+1. Sentence Tokens
+2. Word Tokens
+
+Write both outputs exactly as Python-style lists.
+
+---------------------------------------------------------
+We have 3 documents:
+
+Doc1: I love NLP
+Doc2: NLP is amazing
+Doc3: I love AI
+
+Step 1
+Create the vocabulary (all unique words).
+
+Step 2
+Write the BoW vector for each document.
+
+---------------------------------------------------------
+Q1
+Why does Bag of Words lose word order information?
+
+Q2
+Can Bag of Words understand semantic similarity between words like:
+love
+adore
+happy
+joyful
