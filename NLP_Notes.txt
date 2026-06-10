@@ -21,3 +21,26 @@ NLP is the bridge between them.
 
 For example:-
 Suppose I have written "I LOVE PIZZA". We, as humans, can already understand what this sentence means, like what love is and what pizza is. But for a machine, it doesn't understand whether the sentence is positive or negative. It just sees the text as characters.
+
+-> Applications of NLP
+(i)Sentiment Analysis
+Determining whether a text is of positive, negative or neutral sentiment.
+Used in:
+    Product Reviews
+
+(ii)Machine Translation
+Translating text from one language to another
+For example:-
+    Hindi -> English
+    Hindi -> Punjabi
+Used in:
+    Google Translation
+
+(iii)Chatbots and Virtual Assistants
+Understanding user queries and giving them correct answer
+Used in:
+    ChatGPT, SIRI, Alexa
+
+
+(iv)Spam Detection
+Classifying emails as spam or ham.
