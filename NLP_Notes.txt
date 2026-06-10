@@ -151,3 +151,26 @@ Here "not" plays an important role. If we will remove this than the sentence wou
 Therefore:-
 Stopwords removeal depends on the task that we are doing and should not always be applied blindly.
 
+-> Stemming vs Lemmatization
+Firstly understand these two words:-
+(i)Heuristic (Rules which are defined by humans)
+It is like a shortcut rule but does not gurantees to always be true.
+For example:-
+If a person is carrying an umbrella, its probably ranining.
+This is not always true
+
+
+(ii)Lingustics
+Linguistic means "related to language."
+
+It comes from the word Linguistics, which is the study of language.
+
+For example:
+What is a noun?
+What is a verb?
+What is the root form of a word?
+How are sentences formed?
+
+These are linguistic concepts.
+So:
+Linguistic = related to the knowledge and structure of a language.
