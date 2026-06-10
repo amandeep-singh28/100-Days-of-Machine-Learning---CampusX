@@ -98,3 +98,56 @@ cricket
 NLP
 
 Size = 4
+
+
+****Module 2 - Text preprocessing****
+It is important for us to do the text preprocessing. For example:-
+Text is:- "I LOVE Pizza!!! and I am eating it TODAY."
+If we will not convert our text than models may treat them as new words:
+love
+LOVE
+Love
+
+Cleaned Text:- i love pizza and i am eating it today
+
+But can we cleaned it further??
+Check whether all the words carry useful meaning or not??
+Consider:-
+and
+i
+am
+it
+These words appear in almost every senetence.
+
+For sentiment Prediction:
+I love pizza
+and
+I hate pizza
+
+The important words are:
+love
+hate
+pizza
+
+Words like:
+and
+the
+is
+am
+it
+a
+an
+usually don't contribute much.
+These are called Stopwords.
+
+- Stopwords?
+Stopwords are frequently occurring words such as "the", "is", "and", and "am" that usually carry little meaningful information and are often removed during text preprocessing to reduce noise.
+
+- Note(Important)
+Sometimes Stopwords are important. For example:-
+I do not like piiza.
+Here "not" plays an important role. If we will remove this than the sentence would become "I like pizza" which completely changes the meaning.
+
+Therefore:-
+Stopwords removeal depends on the task that we are doing and should not always be applied blindly.
+
