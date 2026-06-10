@@ -249,3 +249,46 @@ I love cricket. NLP is interesting. AI is powerful.
 "NLP is interesting.",
 "AI is powerful."
 ]
+
+
+****Module 4 - Bag of Words (BoW)****
+This is the first Vectorization technique
+    Machine learning models need numbers, not words
+
+-> Working of BoW
+Suppose we have two documents:-
+Doc1:- I love pizza
+Doc2:- I love burger
+
+After preprocessing and tokenization
+Doc1:- ["i", "love", "pizza"]
+Doc2:- ["i", "love", "burger"]
+
+Step1:- Build vocabulary
+Collect all unique words
+["i", "love", "pizza", "burger"]
+Vocabulary size = 4
+
+Step2:- Count Word Frequencies (from vocabulary)
+Doc1: [1, 1, 1, 0]
+Doc2: [1, 1, 0, 1]
+
+Bag of Words is a text vectorization technique that converts text into numerical vectors by counting the frequency of words in a predefined vocabulary.
+
+Limitations of BoW?
+- Ignores word order
+I love pizza
+pizza love I
+
+For both the vocabulary and word frequency will be same
+
+- Ignores context/meaning
+good
+excellent
+Different words, but similar meaning.
+BoW treats them as completely unrelated.
+
+- Vocabulary can become huge
+If you have 50,000 unique words:
+Vector size = 50,000
+which becomes inefficient.
