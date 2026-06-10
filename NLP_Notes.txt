@@ -216,3 +216,36 @@ which is a valid English word.
 
 Which is better: Stemming or Lemmatization?
 Lemmatization generally produces more meaningful words and is more accurate than stemming. However, stemming is computationally faster. The choice depends on the application and performance requirements.
+
+****Module 3 - Tokenization****
+Tokenization is the process of splitting text into smaller units called tokens, such as words or sentences, which can then be processed by NLP algorithms.
+
+Why Tokenization is Needed??
+Suppose we have:
+I love NLP
+
+A computer cannot directly work on the entire sentence.
+First it breaks it into:
+["I", "love", "NLP"]
+
+Then later we convert these tokens into numbers.
+This is why tokenization comes before vectorization.
+
+Types of Tokenization
+1. Word Tokenization
+Break sentence into words.
+Example:
+I love cricket
+↓
+["I", "love", "cricket"]
+
+2. Sentence Tokenization
+Break a paragraph into sentences.
+Paragraph:
+I love cricket. NLP is interesting. AI is powerful.
+↓
+[
+"I love cricket.",
+"NLP is interesting.",
+"AI is powerful."
+]
