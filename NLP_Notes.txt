@@ -72,3 +72,29 @@ Than, Vectorization, it means that converting text into numbers because ML model
 
 Than, Apply an NLP model and then Result.
 
+-> Important NLP terms
+(i)Corpus
+Collection of documents
+Example:
+Doc1: I love cricket
+Doc2: NLP is interesting
+Doc3: Machine learning is powerful
+
+Together = Corpus
+
+(ii)Document
+Single text file or Document
+
+(iii)Vocabulary
+Unique words present in Corpus
+Example:
+I love cricket
+I love NLP
+
+Vocabulary:
+I
+love
+cricket
+NLP
+
+Size = 4
