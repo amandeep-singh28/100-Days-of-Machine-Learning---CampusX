@@ -74,3 +74,15 @@ love
 adore
 happy
 joyful
+
+---------------------------------------------------------
+For the sentence:
+Machine learning is fun
+Give me:
+
+1. Unigrams
+2. Bigrams
+3. Trigrams
+
+Write them as Python-style lists.
+

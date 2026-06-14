@@ -328,3 +328,11 @@ But if we will use "Bigram":
 ["not good"]
 Now the negative meaning is preserved
 This is one of the reasons N-gram became popular
+
+Example:-
+Sentence: I do not like pizza
+(i)Unigrams:-["I", "do", "not", "like", "pizza"]
+(ii)Bigrams:-["I do", "do not", "not like", "like pizza"]
+(iii)Trigrams:-["I do not", "do not like", "not like pizza"]
+
+Take every group of N consecutive words
