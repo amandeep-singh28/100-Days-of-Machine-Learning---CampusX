@@ -292,3 +292,28 @@ BoW treats them as completely unrelated.
 If you have 50,000 unique words:
 Vector size = 50,000
 which becomes inefficient.
+
+****N-Grams****
+Observation for BoW:-
+(i)No word order
+I love pizza
+pizza love I
+Same vector
+(ii)No meaning
+love
+adore
+Different vectors despite similar meaning
+
+An N-gram is a sequence of N consecutive words
+
+- Unigram (N = 1)
+Sentence:- I love NLP
+Output:- ["I", "love", "NLP"]
+
+- Bigram (N = 2)
+Sentence:- I love NLP
+Output:- ["I love", "love NLP"]
+
+- Trigram (N=3)
+Sentence:- I love NLP
+Output:- ["I love NLP"]
