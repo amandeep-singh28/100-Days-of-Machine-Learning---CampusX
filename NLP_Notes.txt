@@ -317,3 +317,14 @@ Output:- ["I love", "love NLP"]
 - Trigram (N=3)
 Sentence:- I love NLP
 Output:- ["I love NLP"]
+
+- Why N-Grams Matter?
+Look at this sentence
+not good
+Using BoW: ["not", "good"]
+The model may focus upon good and can think that it is a positive sentence
+
+But if we will use "Bigram":
+["not good"]
+Now the negative meaning is preserved
+This is one of the reasons N-gram became popular
