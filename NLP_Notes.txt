@@ -336,3 +336,29 @@ Sentence: I do not like pizza
 (iii)Trigrams:-["I do not", "do not like", "not like pizza"]
 
 Take every group of N consecutive words
+
+
+****TF-IDF****
+Problem with BoW and N-Grams:
+    They were giving equal importance to each and every word.
+For example:-
+Let's say we have two documents
+Doc1: the movie is good
+Doc2: the movie is bad
+
+Vocabulary:- ["the", "movie", "is", "good", "bad"]
+
+BoW will count:
+Word	Doc1
+the	    1
+movie	1
+is	    1
+good	1
+bad	    0
+
+But, the most useful word for prediction is good or bad, Right??
+Words like the, is, am, are are getting the same weightage/importance.
+
+But TF-IDF says:
+    Words that occur frequently in a document but rarely across the entire corpus should reveive higher importance
+
