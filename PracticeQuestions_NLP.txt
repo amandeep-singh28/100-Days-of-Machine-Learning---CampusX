@@ -86,3 +86,20 @@ Give me:
 
 Write them as Python-style lists.
 
+---------------------------------------------------------
+Suppose we have:
+Doc1: NLP is amazing
+
+Doc2: NLP is powerful
+
+Doc3: NLP is interesting
+
+Which word will have a higher IDF value?
+NLP
+amazing
+
+And why?
+
+What is the difference between CountVectorizer and TfidfVectorizer?
+
+CountVectorizer basically used in techniques such as BoW and N-Grams, It converts text into frequency but it gave equal importance to all of the words. But TfidVectorizer is used in Tf-IDF technique which also does the same work but does not give equal importance to all of the words
