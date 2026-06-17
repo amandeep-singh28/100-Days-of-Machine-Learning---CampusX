@@ -1,0 +1,11 @@
+- split() and word_tokenize() works differently. split() ignores punctuation, etc etc
+So, in NLP you must use word_tokenize() to get the best results
+
+- word_tokenize is used for word splitting including punctuation too
+While sent_tokenize does the splitting when a full stop, question mark or exclamation mark arrives
+For example:
+paragraph = "I love NLP. It is amazing. AI is powerful, smart. Hello! Amandeep? Singh"
+Output:-['I love NLP.', 'It is amazing.', 'AI is powerful, smart.', 'Hello!', 'Amandeep?', 'Singh']
+
+-By default WordNetLemmatizer thinks that word is a noun, So we need to specify in the argument in which form we need to convert that word.
+print(lemmatizer.lemmatize("running", pos='v'))
