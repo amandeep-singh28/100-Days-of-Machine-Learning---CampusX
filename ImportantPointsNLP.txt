@@ -9,3 +9,18 @@ Output:-['I love NLP.', 'It is amazing.', 'AI is powerful, smart.', 'Hello!', 'A
 
 -By default WordNetLemmatizer thinks that word is a noun, So we need to specify in the argument in which form we need to convert that word.
 print(lemmatizer.lemmatize("running", pos='v'))
+
+-Complete Pre-processing pipeline 
+Raw Text
+↓
+Lowercase
+↓
+Remove Punctuation
+↓
+Tokenize
+↓
+Remove Stopwords
+↓
+Stem/Lemmatize
+↓
+Processed Tokens
