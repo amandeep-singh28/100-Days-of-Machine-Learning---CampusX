@@ -416,3 +416,53 @@ If we are building an INFORMATION EXTRACTION FROM CVs, it can be really helpful,
 Search Engines
 If we are searching Apple revenue 2025.
 Search engine can already understand we are talking about Apple -> Company
+
+- pip install spacy (Library used for NER)
+- python -m spacy download en_core_web_sm (Download english model)
+Think of it as:
+Dictionary
++
+Grammar Knowledge
++
+NER Knowledge
+
+-> POS Tagging (Part of speech) -> Helps to understand sentence
+Common spaCy POS Tags
+Tag	        Meaning	        Example
+NOUN	    Noun	        dog, car, book
+PROPN	    Proper Noun	    Amandeep, Delhi, Google
+VERB	    Action Word	    run, eat, study
+ADJ	        Adjective	    beautiful, smart
+ADV	        Adverb	        quickly, slowly
+PRON	    Pronoun	        he, she, they
+ADP	        Preposition	    in, on, at
+CCONJ	    Conjunction	    and, or, but
+NUM	        Number	        10, 100
+
+-> Why Do We Need NER?
+Suppose you have 10,000 resumes.
+NER can automatically extract:
+
+Name
+College
+Company
+Location
+from resumes.
+
+Instead of a human reading all of them.
+
+-> Why Do We Need POS Tagging?
+Suppose you want to understand a sentence.
+John eats pizza.
+POS tells:
+
+John -> Noun
+eats -> Verb
+pizza -> Noun
+
+Now the computer knows:
+Someone
+↓
+is doing an action
+↓
+on something
