@@ -398,3 +398,21 @@ D4
 
 IDF -> How rare a word is across all documents.
 
+****Named Entity Recognition (NER)****
+It is a NLP task that identifies and classifies words into some predefined categories.
+For example:
+    Person
+    Organization
+    Location
+    Date
+    Time
+    Money
+    etc
+
+Why is it important?
+If we will not do this, than computer only sees it as a bunch of words. For example:
+If we are building an INFORMATION EXTRACTION FROM CVs, it can be really helpful, NER can automatically extract Person name, College name, Skills, etc
+
+Search Engines
+If we are searching Apple revenue 2025.
+Search engine can already understand we are talking about Apple -> Company
