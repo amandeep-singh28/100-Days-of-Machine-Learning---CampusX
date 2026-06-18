@@ -466,3 +466,39 @@ Someone
 is doing an action
 ↓
 on something
+
+****Word Embeddings(Word2Vec)****
+BoW were having a limitation:
+    good, excellent
+Both are different words, different vectors, No relationship.
+But as humans, we know that both terms are different
+So Word2Vec was invented to solve this Problem
+
+BoW-> BoW is just creating vectors and 1 means present, 0 means absent, so it cannot understand the meaning.
+
+For example:-
+We have these sentences
+I love cricket
+I love football
+I enjoy cricket
+I enjoy football
+
+love, enjoy => appear in similar context
+cricket, football => appear in similar context
+
+So Word2Vec says:-
+    If two words appear in similar contexts, they probably have similar meanings.
+
+BoW vs Word2Vec
+BoW
+good -> [1, 0, 0]
+excellent -> [0, 1, 0]
+bad -> [0, 0, 1]
+
+But Word2Vec
+good      -> [0.82, 0.41, 0.73]
+excellent -> [0.80, 0.43, 0.71]
+bad       -> [-0.75, 0.12, -0.64]
+
+good, excellent have similar vectors. But bad is completely different
+
