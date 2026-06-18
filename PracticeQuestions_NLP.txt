@@ -103,3 +103,15 @@ And why?
 What is the difference between CountVectorizer and TfidfVectorizer?
 
 CountVectorizer basically used in techniques such as BoW and N-Grams, It converts text into frequency but it gave equal importance to all of the words. But TfidVectorizer is used in Tf-IDF technique which also does the same work but does not give equal importance to all of the words
+
+---------------------------------------------------------
+What is the difference between Tokenization and NER?
+
+Identify the entities(NER):
+Sundar Pichai visited New York on 15 January 2025 and met employees of Google.
+Tell me:
+
+Sundar Pichai → ?
+New York → ?
+15 January 2025 → ?
+Google → ?

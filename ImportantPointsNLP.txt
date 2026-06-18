@@ -24,3 +24,22 @@ Remove Stopwords
 Stem/Lemmatize
 ↓
 Processed Tokens
+
+-CountVectorizer stores the vocabulary in sorted order and also it converts the text into lowercase too
+-CountVectorizer also ignores those words which are of single character only
+
+-What does CountVectorizer(ngram_range=(1,2)) do?
+
+It creates both unigrams and bigrams from the text. By default, it converts text to lowercase, ignores single-character tokens, builds a vocabulary of the generated n-grams, and stores the features in sorted order before creating the Bag of Words matrix.
+
+- NLP returns sparse matrix why?
+Because if there are 100 columns and 100 documents. Normal matrix stores 100*100 records even though 90-95% are zeroes. But sparse matrix stores only those values which are not zero along with their positions to avoid memory wastage.
+
+- NER is not perfect, it can make mistakes
+NER models are not 100% accurate, but they achieve high enough accuracy to be useful in real-world applications. Modern systems combine NER with other techniques such as knowledge graphs, rules, databases, and machine learning models to improve reliability. Even with occasional errors, NER greatly helps in extracting structured information from unstructured text.
+
+-Word2Vec is better than BoW and Tf-IDF because it creates more dense vectors through which we can understand words with similar meaning have similar vector representation
+good      -> [0.82, 0.41, 0.73]
+excellent -> [0.80, 0.43, 0.71]
+bad       -> [-0.75, 0.12, -0.64]
+
