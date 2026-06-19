@@ -525,3 +525,17 @@ So, New_vector = Average of all vectors
 New_vector => [0.43, 0.47, 0.60]
 
 Note:-If the words are appearing in the same context, than their vectors would be closer to each other
+
+- Proper Pipeline for Word2Vec
+Step1: Get vectors for each word
+Step2: Combine them (Average of all word vectors to create sentence vector)
+Step3: Feed the senetence vector into Models like Logistic Regression, SVM, etc
+
+Making of sentence vectors known as "Sentence Embeddings"
+
+Why??
+Because in many task we need a complete vector for a sentence. For example:-
+In Chatbots, message => I want to study NLP, We cannot rely on Word vector because Chatbots would not be able to understand, we need to give a full vector.
+
+Also there is one more major limitation of Word2Vec:-
+(i)Sentence level information is lost because when we create the sentence vector by doing the average of all the word vector. Now we cannot tell which words were present, which words were similar, the relationship between the words {A Lot of information is lost}
