@@ -539,3 +539,10 @@ In Chatbots, message => I want to study NLP, We cannot rely on Word vector becau
 
 Also there is one more major limitation of Word2Vec:-
 (i)Sentence level information is lost because when we create the sentence vector by doing the average of all the word vector. Now we cannot tell which words were present, which words were similar, the relationship between the words {A Lot of information is lost}
+
+
+-> Sentence Embedding?
+A dense numerical vector that represents the meaning of an entire sentence.
+
+Word2Vec generates embeddings for individual words, whereas sentence embeddings generate a single vector representing the meaning of an entire sentence.
+
