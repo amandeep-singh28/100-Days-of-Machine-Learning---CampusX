@@ -566,3 +566,19 @@ Example articles:
 The model may discover:
     Topic 1 = Sports
 
+****LDA (Latent Dirichlet Allocation)****
+Suppose we have millions of unlabeled articles, and it is not possible to read each article manually.
+LDA helps us discover hidden topics from the collection of documents.
+It analyzes the words present in the documents and identifies groups of words that frequently occur together.
+
+For example, LDA may generate:
+Topic 1:
+cricket, virat, match, team, IPL
+Topic 2:
+python, AI, NLP, machine learning
+
+By looking at these words, we can infer that:
+Topic 1 -> Sports
+Topic 2 -> Technology
+
+Thus, instead of reading every document, we can understand the major themes present in the corpus.
