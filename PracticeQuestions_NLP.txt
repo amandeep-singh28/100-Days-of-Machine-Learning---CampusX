@@ -115,3 +115,18 @@ Sundar Pichai → ?
 New York → ?
 15 January 2025 → ?
 Google → ?
+
+---------------------------------------------------------
+Why is Word2Vec considered a dense representation while BoW is considered a sparse representation?
+
+Word2Vec is considered dense representation because it create word vectors and tries to tell the relationship of those words which comes in similar context. If the word vector is same than we can tell that these words are almost same.
+But in BoW, it checks frequency of the words from the vocabulary, if the word is present in the document marked it as 1 else 0
+
+
+Your Answer (Refined)
+Word2Vec is considered a dense representation because each word is represented by a vector containing mostly non-zero values. These vectors capture semantic relationships between words, so words appearing in similar contexts have similar vector representations.
+
+Bag of Words is considered a sparse representation because the vector size depends on the vocabulary size, and most positions in the vector are 0 since a document contains only a small subset of the vocabulary.
+
+What is the difference between Word2Vec and Sentence Embeddings?
+
