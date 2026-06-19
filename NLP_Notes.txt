@@ -546,3 +546,23 @@ A dense numerical vector that represents the meaning of an entire sentence.
 
 Word2Vec generates embeddings for individual words, whereas sentence embeddings generate a single vector representing the meaning of an entire sentence.
 
+****Text Classification & Topic Modelling****
+- In text classification, the categories are already known(Supervised Learning).
+For example:-
+Text	                Label
+I love this movie	    Positive
+This movie is terrible	Negative
+Amazing acting	        Positive
+
+The model learns from labeled examples.
+
+- There are 10,000 articles but nobody has labelled them, so the machine has to discover topics on its own (Unsupervised Learning)
+
+Example articles:
+    Virat Kohli scored a century.
+    India won the cricket match.
+    IPL season starts next month.
+
+The model may discover:
+    Topic 1 = Sports
+
