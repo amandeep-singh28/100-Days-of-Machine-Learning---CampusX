@@ -502,3 +502,26 @@ bad       -> [-0.75, 0.12, -0.64]
 
 good, excellent have similar vectors. But bad is completely different
 
+- Important Difference
+BoW & TF-IDF create vector for documents
+While Word2Vec create vector for words
+
+For example:-
+text = "I love NLP"
+Word2Vec will create vector for each word
+I      -> [0.1, 0.2, 0.3]
+love   -> [0.8, 0.7, 0.6]
+NLP    -> [0.4, 0.5, 0.9]
+
+Now, we need one vector for the sentence
+So, New_vector = Average of all vectors
+(I + Love + NLP) / 3
+[
+ (0.1+0.8+0.4)/3,
+ (0.2+0.7+0.5)/3,
+ (0.3+0.6+0.9)/3
+]
+
+New_vector => [0.43, 0.47, 0.60]
+
+Note:-If the words are appearing in the same context, than their vectors would be closer to each other
