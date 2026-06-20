@@ -582,3 +582,59 @@ Topic 1 -> Sports
 Topic 2 -> Technology
 
 Thus, instead of reading every document, we can understand the major themes present in the corpus.
+
+****Cosine Similarity****
+(Cosine Similarity is a metric used to measure the similarity between two vectors by comparing the angle between them. A higher cosine similarity indicates that the vectors point in similar directions and therefore represent similar meanings.)
+
+Word2Vec was giving word vector but we were unable to tell which two vectors are similar
+So, to solve this problem COSINE SIMILARITY was introduced.
+
+- What does Cosine Similarity Check?
+Are the two vectors pointing in the same direction or not
+
+Example 1:
+A = [1,1]
+B = [2,2]
+
+They are pointing in the same direction
+↗
+↗
+Therefore High Similarity
+
+Example 2:
+A = [1,1]
+B = [-1,-1]
+
+↗
+↙
+Opposite direction
+Therefore Low Similarity
+
+Example 3:
+A = [1,0]
+B = [0,1]
+
+→
+↑
+Neither Similar nor Opposite
+
+- Why Not Use Euclidean Distance?
+Suppose:
+A = [1,1]
+B = [10,10]
+
+Euclidean Distance says:
+Far Apart
+because:
+10 is far from 1
+
+But semantically:
+[1,1]
+[10,10]
+point in exactly the same direction.
+Meaning is similar.
+
+So in NLP we care more about:
+Direction
+than
+Magnitude
