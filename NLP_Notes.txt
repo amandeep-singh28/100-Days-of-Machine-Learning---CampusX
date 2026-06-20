@@ -638,3 +638,17 @@ So in NLP we care more about:
 Direction
 than
 Magnitude
+
+- Why to use Cosine Similarity?
+Imagine a user searches:
+    How to learn NLP?
+And we have two documents
+Document A
+    Best resources for learning NLP
+Document B
+    Best places to visit Haridwar
+We convert all of them into embeddings
+Then use Cosine Similarity to check which document is having the HIGH SIMILARITY
+QUERY <=> Document A
+High Similarity
+So, we return Document A
