@@ -43,3 +43,24 @@ good      -> [0.82, 0.41, 0.73]
 excellent -> [0.80, 0.43, 0.71]
 bad       -> [-0.75, 0.12, -0.64]
 
+-In Short
+Text
+↓
+BoW
+Problem:
+No importance weighting
+
+↓
+TF-IDF
+Problem:
+No semantic understanding
+
+↓
+Word2Vec
+Problem:
+Same word always gets same vector
+
+↓
+BERT
+Solution:
+Context-aware embeddings
