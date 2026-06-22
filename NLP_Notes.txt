@@ -652,3 +652,26 @@ Then use Cosine Similarity to check which document is having the HIGH SIMILARITY
 QUERY <=> Document A
 High Similarity
 So, we return Document A
+
+****Naive Baeyes Classifier****
+A probabilistic classification algorithm based on baeyes theorem. It assumes all features(words) are independent of each other
+
+Why is it called Naive?
+Because it assumes all features (words) are independent of each other.
+
+Why is it popular in NLP?
+It is fast, simple, and performs surprisingly well on high-dimensional text data.
+
+Bayes Theorem:
+P(Class|Data) = P(Data|Class) * P(Class) / P(Data)
+Posterior Probability = Likelihood × Prior Probability / Evidence
+
+Types:
+1. Multinomial Naive Bayes
+   - Used for text classification.
+   - Works well with Bag of Words and TF-IDF.
+   - Features are word frequencies/counts.
+2. Gaussian Naive Bayes
+   - Used for continuous numerical data.
+   - Assumes features follow a normal (Gaussian) distribution.
+
