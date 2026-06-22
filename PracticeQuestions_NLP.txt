@@ -130,3 +130,14 @@ Bag of Words is considered a sparse representation because the vector size depen
 
 What is the difference between Word2Vec and Sentence Embeddings?
 
+---------------------------------------------------------
+A = [1,1]
+B = [2,2]
+C = [-1,-1]
+Which pair should have the highest cosine similarity?
+
+A & B
+A & C
+
+---------------------------------------------------------
+Why is BERT considered better than Word2Vec?
