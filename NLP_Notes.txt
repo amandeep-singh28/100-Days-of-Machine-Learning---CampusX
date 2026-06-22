@@ -689,3 +689,42 @@ What Word2Vec will give??
 This problem is known as "Polysemy" problem.
 This is the problem which is solved by BERT.
 
+- Why BERT?
+It gives a vector based on the context in which the word appears(Like in Word2Vec, it was just creating the vectors even if it is appearing in the different context)
+For examples:
+
+Word2Vec
+bank
+↓
+One Vector
+Always.
+
+BERT
+Sentence 1:
+I deposited money in the bank.
+↓
+bank -> Financial Bank Vector
+
+Sentence 2:
+I sat near the river bank.
+↓
+bank -> River Bank Vector
+
+- Another Example
+Consider:
+The mouse ate cheese.
+and
+The mouse is connected to my laptop.
+
+Humans know:
+First
+mouse = animal
+Second
+mouse = computer device
+
+Word2Vec:
+mouse -> one vector
+
+BERT:
+mouse(animal) -> vector A
+mouse(device) -> vector B
