@@ -675,3 +675,17 @@ Types:
    - Used for continuous numerical data.
    - Assumes features follow a normal (Gaussian) distribution.
 
+
+****BERT****
+Problem:
+    Suppose there are two documents:
+        D1:I deposited money in the bank.
+        D2:I sat near the river bank.
+What Word2Vec will give??
+    It will create the vector appearing in the same context.
+    "bank" is appearing in the same context. But the problem is both words have different meanings in the context of document.
+    Word2Vec will create same vector(It mixes both meanings together) {bank -> one vector}
+
+This problem is known as "Polysemy" problem.
+This is the problem which is solved by BERT.
+
